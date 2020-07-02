@@ -2,30 +2,30 @@ import os, shutil, configparser
 import pandas as pd
 
 class CountryMetaData:
-    def __init__(self, id, DataStreamCode, Name, DataStreamCurr):
+    def __init__(self, id, DatastreamCode, Name, DatastreamCurrency):
         self.id = id
-        self.DataStreamCode = DataStreamCode
+        self.DatastreamCode = DatastreamCode
         self.Name = Name
-        self.DataStreamCurr = DataStreamCurr
+        self.DatastreamCurrency = DatastreamCurrency
     def id(self):
         self.id
-    def DataStreamCode(self):
-        self.DataStreamCode
+    def DatastreamCode(self):
+        self.DatastreamCode
     def Name(self):
         self.Name
-    def DataStreamCurr(self):
-        self.DataStreamCurr
+    def DatastreamCurrency(self):
+        self.DatastreamCurrency
     def print(self):
-        print("id:"+self.id+"; DataStreamCode:"+self.DataStreamCode+"; Name:"+self.Name+"; DataStreamCurr:"+self.DataStreamCurr)
+        print("id:"+self.id+"; DatastreamCode:"+self.DataStreamCode+"; Name:"+self.Name+"; DatastreamCurrency:"+self.DatastreamCurrency)
 
-def buildCountryMetaDataRow(id, DataStreamCode, Name, DataStreamCurr):
+def buildCountryMetaDataRow(id, DatastreamCode, Name, DatastreamCurrency):
     config = configparser.ConfigParser()
 
     config.add_section(id)
     config[id]['id'] = id
-    config[id]['DataStreamCode'] = DataStreamCode
+    config[id]['DatastreamCode'] = DatastreamCode
     config[id]['Name'] = Name
-    config[id]['DataStreamCurr'] = DataStreamCurr
+    config[id]['DatastreamCurrency'] = DatastreamCurrency
 
     with open("countryMetaData.ini", 'w') as f:
         config.write(f)
@@ -37,10 +37,10 @@ class CountryMetaDataFile:
     def _init__(self):
         self
 
-    def addCountry(self, id, DataStreamCode, Name, DataStreamCurr):
+    def addCountry(self, id, DatastreamCode, Name, DatastreamCurrency):
         if not os.path.isfile(self.user_config):
             os.makedirs(self.user_config_dir, exist_ok=True)
-            buildCountryMetaDataRow(id, DataStreamCode, Name, DataStreamCurr)
+            buildCountryMetaDataRow(id, DatastreamCode, Name, DatastreamCurrency)
             shutil.copyfile("countryMetaData.ini", self.user_config)
             os.remove("countryMetaData.ini")
 
@@ -51,16 +51,30 @@ class CountryMetaDataFile:
             config.add_section(id)
 
         config[id]['id'] = id
-        config[id]['DataStreamCode'] = DataStreamCode
+        config[id]['DatastreamCode'] = DatastreamCode
         config[id]['Name'] = Name
-        config[id]['DataStreamCurr'] = DataStreamCurr
+        config[id]['DatastreamCurrency'] = DatastreamCurrency
 
         ##Write
         with open(self.user_config, 'w') as f:
             config.write(f)
 
 
-    def readCountryMeta(self):
+    def readCountryMeta(self, country):
+        config = configparser.ConfigParser()
+        config.read(self.user_config)
+        d = []
+        d.append(
+            {
+                'id': config[country]['id'],
+                'DatastreamCode': config[country]['DatastreamCode'],
+                'Name': config[country]['Name'],
+                'DatastreamCurrency': config[country]['DatastreamCurrency']
+            }
+        )
+        return pd.DataFrame(d).set_index('id')
+
+    def readMetadata(self):
         config = configparser.ConfigParser()
         config.read(self.user_config)
         d = []
@@ -68,12 +82,12 @@ class CountryMetaDataFile:
             d.append(
                 {
                     'id': config[country]['id'],
-                    'DataStreamCode': config[country]['DataStreamCode'],
+                    'DatastreamCode': config[country]['DatastreamCode'],
                     'Name': config[country]['Name'],
-                    'DataStreamCurr': config[country]['DataStreamCurr']
+                    'DatastreamCurrency': config[country]['DatastreamCurrency']
                 }
             )
-        return pd.DataFrame(d)
+        return pd.DataFrame(d).set_index('id')
 
 
 
@@ -89,7 +103,7 @@ CountryMetaDataFile().addCountry("ITA", "IT", "Italy", "ITL")
 CountryMetaDataFile().addCountry("DEU", "BD", "Germany", "WGM")
 
 
-print(CountryMetaDataFile().readCountryMeta())
+#print(CountryMetaDataFile().readMetadata())
 
 
 

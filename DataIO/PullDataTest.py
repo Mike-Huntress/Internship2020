@@ -1,25 +1,24 @@
 from pydatastream import Datastream
 from DataIO.DataLib import datastream, DataLib, DatastreamPulls
+from DataIO.MetaDataFile import CountryMetaDataFile
 
 
-DS = Datastream(username="ZBDW073", password="MOTOR315")
-
-#data = DS.get_price('@AAPL', date_from='2008', date_to='2009')
-# data = DS.fetch(['USCGDP..D'], date_from='2000')
-#
-# print(data)
+countries = CountryMetaDataFile().readMetadata()
+# print(countries)
 
 
-dl = DataLib("Short Rate")
-data = DS.fetch(['USCGDP..D'], date_from='2000')
-dl.write_csv("Short Rate", data)
+dsPuller = DatastreamPulls(countries)
+start_date = '2000-01'
+long_rates_primary = dsPuller.ds_country_pull(lambda x: f'TR{x}10T', start_date, 'RY', 'M', ["USA", "JPN"])
 
-print(dl.lst())
-
-# dsPuller = DatastreamPulls.ds_country_pull()
-# dsPuller
+print(long_rates_primary)
 
 
 
+##Write to DataLib
+dl = DataLib("TestData")
+#dl.write_data("Long_Rate", long_rates_primary.to_timestamp())
+
+print(dl.pull("Long_Rate").loc[:,"USA"])
 
 
