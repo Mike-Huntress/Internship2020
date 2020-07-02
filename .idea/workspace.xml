@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5ca5f69-bd6d-4f20-9e01-c33817bcb1b3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataIO/CredentialsStoreBuilder.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataIO/DataLib.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataIO/Credentials.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DataIO/MetaDataFile.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleSignal/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataIO/DataStreamUtility" afterPath="$PROJECT_DIR$/DataIO/DataStreamUtility" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataIO/CredentialsStoreBuilder.py" afterPath="$PROJECT_DIR$/DataIO/CredentialsStoreBuilder.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataIO/DataLib.py" afterPath="$PROJECT_DIR$/DataIO/DataLib.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataIO/PullDataTest.py" afterPath="$PROJECT_DIR$/DataIO/PullDataTest.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestNotebook.ipynb" afterPath="$PROJECT_DIR$/TestNotebook.ipynb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,88 +19,100 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HelloWorld.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HelloWorld.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PullDataTest.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataIO/PullDataTest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataLib.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataIO/DataLib.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CredentialsStoreBuilder.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DataIO/CredentialsStoreBuilder.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Data Review.ipynb" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/BondEst/Data Review.ipynb">
-          <provider selected="true" editor-type-id="ipnb-editor">
-            <state>
-              <selected id="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="01 - NGDP.ipynb" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/BondEst/01 - NGDP.ipynb">
-          <provider selected="true" editor-type-id="ipnb-editor">
-            <state>
-              <selected id="0" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="01 - Eurodollars.ipynb" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/BondEst/01 - Eurodollars.ipynb">
-          <provider selected="true" editor-type-id="ipnb-editor">
-            <state>
-              <selected id="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestNotebook.ipynb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestNotebook.ipynb">
-          <provider selected="true" editor-type-id="ipnb-editor">
-            <state>
-              <selected id="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.66587394">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="PullDataTest.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/DataIO/PullDataTest.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="210">
+                  <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+                  <folding>
+                    <element signature="e#0#35#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="DataLib.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/DataIO/DataLib.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="392">
+                  <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#0#9#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="parquet.py" pinned="false" current-in-tab="false">
+            <entry file="file://$USER_HOME$/anaconda/lib/python3.6/site-packages/pandas/io/parquet.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="113">
+                  <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Credentials.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/DataIO/Credentials.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="45">
+                  <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="CredentialsStoreBuilder.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/DataIO/CredentialsStoreBuilder.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="204">
+                  <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MetaDataFile.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/DataIO/MetaDataFile.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="203">
+                  <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#0#31#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="01 - Short Rates.ipynb" pinned="false" current-in-tab="false">
+            <entry file="file://$USER_HOME$/Downloads/BondEst/01 - Short Rates.ipynb">
+              <provider selected="true" editor-type-id="ipnb-editor">
+                <state>
+                  <selected id="0" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="01 - Eurodollars.ipynb" pinned="false" current-in-tab="true">
+            <entry file="file://$USER_HOME$/Downloads/BondEst/01 - Eurodollars.ipynb">
+              <provider selected="true" editor-type-id="ipnb-editor">
+                <state>
+                  <selected id="2" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -114,16 +129,18 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/HelloWorld.py" />
-        <option value="$PROJECT_DIR$/TestNotebook.ipynb" />
         <option value="$PROJECT_DIR$/DataIO/DataStreamUtility" />
-        <option value="$USER_HOME$/Downloads/BondEst/01 - NGDP.ipynb" />
-        <option value="$USER_HOME$/Downloads/BondEst/Data Review.ipynb" />
-        <option value="$USER_HOME$/Downloads/BondEst/01 - Eurodollars.ipynb" />
-        <option value="$PROJECT_DIR$/DataIO/PullDataTest.py" />
         <option value="$PROJECT_DIR$/DataIO/WriteCredentials.py" />
         <option value="$PROJECT_DIR$/DataIO/credentialsStoreBuilder.py" />
-        <option value="$PROJECT_DIR$/DataIO/DataLib.py" />
+        <option value="$PROJECT_DIR$/DataIO/PullDataTest.py" />
+        <option value="$USER_HOME$/Downloads/BondEst/01 - NGDP.ipynb" />
+        <option value="$USER_HOME$/Downloads/BondEst/Data Review.ipynb" />
+        <option value="$PROJECT_DIR$/TestNotebook.ipynb" />
         <option value="$PROJECT_DIR$/DataIO/CredentialsStoreBuilder.py" />
+        <option value="$PROJECT_DIR$/DataIO/Credentials.py" />
+        <option value="$PROJECT_DIR$/DataIO/DataLib.py" />
+        <option value="$PROJECT_DIR$/DataIO/MetaDataFile.py" />
+        <option value="$USER_HOME$/Downloads/BondEst/01 - Eurodollars.ipynb" />
       </list>
     </option>
   </component>
@@ -194,7 +211,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.credentialsStoreBuilder">
+  <component name="RunManager" selected="Python.MetaDataFile">
     <configuration name="BWInternship2020" type="Python.Ipnb" factoryName="Jupyter Notebook">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -211,6 +228,23 @@
       <option name="ipnbHost" value="127.0.0.1" />
       <option name="ipnbPort" value="8888" />
     </configuration>
+    <configuration name="Credentials" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DataIO" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="BWInternship2020" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataIO/Credentials.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="HelloWorld" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -224,6 +258,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="BWInternship2020" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HelloWorld.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="MetaDataFile" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DataIO" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="BWInternship2020" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataIO/MetaDataFile.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -262,17 +313,21 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <list size="4">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Jupyter Notebook.BWInternship2020" />
       <item index="1" class="java.lang.String" itemvalue="Python.HelloWorld" />
       <item index="2" class="java.lang.String" itemvalue="Python.PullDataTest" />
       <item index="3" class="java.lang.String" itemvalue="Python.credentialsStoreBuilder" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Credentials" />
+      <item index="5" class="java.lang.String" itemvalue="Python.MetaDataFile" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.credentialsStoreBuilder" />
-        <item index="1" class="java.lang.String" itemvalue="Python.PullDataTest" />
-        <item index="2" class="java.lang.String" itemvalue="Python.HelloWorld" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.MetaDataFile" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Credentials" />
+        <item index="2" class="java.lang.String" itemvalue="Python.PullDataTest" />
+        <item index="3" class="java.lang.String" itemvalue="Python.credentialsStoreBuilder" />
+        <item index="4" class="java.lang.String" itemvalue="Python.HelloWorld" />
       </list>
     </recent_temporary>
   </component>
@@ -290,6 +345,14 @@
       <option name="presentableId" value="Default" />
       <updated>1593381642892</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added credential builder.">
+      <created>1593643129481</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1593643129481</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -302,11 +365,11 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291714" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40068105" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40068105" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32690126" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32576618" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962447" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -319,32 +382,17 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added credential builder." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added credential builder." />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/DataIO/PullDataTest.py</url>
-          <line>10</line>
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/DataIO/PullDataTest.py</url>
-          <line>9</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/DataIO/DataLib.py</url>
-          <line>110</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/DataIO/DataLib.py</url>
-          <line>111</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/DataIO/CredentialsStoreBuilder.py</url>
-          <line>53</line>
-          <option name="timeStamp" value="14" />
+          <line>105</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -354,7 +402,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="20" />
+      <option name="time" value="22" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -371,21 +419,6 @@
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
           <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestNotebook.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HelloWorld.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -431,6 +464,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.6/site-packages/pandas/io/parquet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelloWorld.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataIO/PullDataTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/Downloads/BondEst/Data Review.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
@@ -438,34 +497,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/BondEst/01 - NGDP.ipynb">
+    <entry file="file://$PROJECT_DIR$/TestNotebook.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
           <selected id="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/BondEst/01 - Eurodollars.ipynb">
+    <entry file="file://$USER_HOME$/Downloads/BondEst/01 - NGDP.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="3" />
+          <selected id="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataIO/PullDataTest.py">
+    <entry file="file://$USER_HOME$/Downloads/BondEst/01 - Short Rates.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.6/json/decoder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="380">
+          <caret line="356" column="0" lean-forward="false" selection-start-line="356" selection-start-column="0" selection-end-line="356" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataIO/Credentials.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DataIO/DataLib.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+        <state relative-caret-position="392">
+          <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -474,9 +546,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DataIO/CredentialsStoreBuilder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        <state relative-caret-position="204">
+          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/BondEst/01 - Eurodollars.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataIO/MetaDataFile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

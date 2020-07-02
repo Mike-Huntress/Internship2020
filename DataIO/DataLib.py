@@ -4,7 +4,7 @@ import pandas as pd
 import os
 import quandl as raw_quandl
 from datetime import datetime
-from DataIO.CredentialsStoreBuilder import SourceCredentials
+from DataIO.CredentialsStoreBuilder import SourceCredentials, DataSourceCredentials
 import configparser
 
 
@@ -40,7 +40,7 @@ class DataLib:
         data_file = os.path.join(outdir, self.data_filename + ".parquet")
         if (hasattr(data.index.dtype, "freq")):
             data = data.to_timestamp()
-        data.to_parquet(data_file, compression="gzip", times='int96')
+        data.to_parquet(data_file, compression="gzip")#, times='int96'
 
     def lst(self, prefix = ""):
         for path in glob.glob(os.path.join(self.base_dir, prefix, "**", self.data_filename + "*"), recursive=True):
@@ -81,12 +81,7 @@ class DatastreamPulls:
 
 
 def getkey(name):
-    config = configparser.ConfigParser()
-    user_config_dir = os.path.expanduser("~") + "/ConfigKeys"
-    user_config = user_config_dir + "/user_config.ini"
-    with open(user_config) as f:
-        config.read(user_config)
-    return SourceCredentials(name,config[name]['user'], config[name]['password'])
+    return DataSourceCredentials().readCredentials(name)
 
 # class Quandl:
 #     def __init__(self, key):
