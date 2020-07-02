@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e5ca5f69-bd6d-4f20-9e01-c33817bcb1b3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleSignal/0_SignalDataLibrary.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleSignal/DataViewTest.ipynb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataIO/Credentials.py" afterPath="$PROJECT_DIR$/DataIO/Credentials.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataIO/DataLib.py" afterPath="$PROJECT_DIR$/DataIO/DataLib.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataIO/MetaDataFile.py" afterPath="$PROJECT_DIR$/DataIO/MetaDataFile.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataIO/PullDataTest.py" afterPath="$PROJECT_DIR$/DataIO/PullDataTest.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestNotebook.ipynb" afterPath="$PROJECT_DIR$/TestNotebook.ipynb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,16 +21,29 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.56661403">
+    <splitter split-orientation="horizontal" split-proportion="0.5070057">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="PullDataTest.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/DataIO/PullDataTest.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+                <state relative-caret-position="90">
+                  <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
                   <folding>
                     <element signature="e#0#35#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="0_SignalDataLibrary.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/SampleSignal/0_SignalDataLibrary.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="244">
+                  <caret line="35" column="63" lean-forward="true" selection-start-line="35" selection-start-column="63" selection-end-line="35" selection-end-column="63" />
+                  <folding>
+                    <element signature="e#0#63#0" expanded="true" />
+                    <element signature="e#349#751#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -31,8 +52,8 @@
           <file leaf-file-name="MetaDataFile.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/DataIO/MetaDataFile.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="528">
-                  <caret line="83" column="23" lean-forward="true" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="23" />
+                <state relative-caret-position="249">
+                  <caret line="97" column="65" lean-forward="true" selection-start-line="97" selection-start-column="65" selection-end-line="97" selection-end-column="65" />
                   <folding>
                     <element signature="e#0#31#0" expanded="true" />
                   </folding>
@@ -43,8 +64,8 @@
           <file leaf-file-name="DataLib.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/DataIO/DataLib.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="171">
-                  <caret line="59" column="45" lean-forward="true" selection-start-line="59" selection-start-column="45" selection-end-line="59" selection-end-column="45" />
+                <state relative-caret-position="230">
+                  <caret line="82" column="30" lean-forward="true" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
                   <folding>
                     <element signature="e#0#9#0" expanded="true" />
                   </folding>
@@ -52,21 +73,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="parquet.py" pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/anaconda/lib/python3.6/site-packages/pandas/io/parquet.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="113">
-                  <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Credentials.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Credentials.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/DataIO/Credentials.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="60">
-                  <caret line="4" column="61" lean-forward="false" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="61" />
+                  <caret line="4" column="45" lean-forward="false" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
                   <folding />
                 </state>
               </provider>
@@ -85,11 +96,20 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="TestNotebook.ipynb" pinned="false" current-in-tab="true">
+          <file leaf-file-name="TestNotebook.ipynb" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/TestNotebook.ipynb">
               <provider selected="true" editor-type-id="ipnb-editor">
                 <state>
-                  <selected id="5" />
+                  <selected id="4" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="DataViewTest.ipynb" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/SampleSignal/DataViewTest.ipynb">
+              <provider selected="true" editor-type-id="ipnb-editor">
+                <state>
+                  <selected id="16" />
                 </state>
               </provider>
             </entry>
@@ -116,25 +136,7 @@
             <entry file="file://$USER_HOME$/Downloads/BondEst/Data Review.ipynb">
               <provider selected="true" editor-type-id="ipnb-editor">
                 <state>
-                  <selected id="5" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="01 - Money Supply.ipynb" pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/Downloads/BondEst/01 - Money Supply.ipynb">
-              <provider selected="true" editor-type-id="ipnb-editor">
-                <state>
-                  <selected id="0" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="01 - Current Account.ipynb" pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/Downloads/BondEst/01 - Current Account.ipynb">
-              <provider selected="true" editor-type-id="ipnb-editor">
-                <state>
-                  <selected id="0" />
+                  <selected id="12" />
                 </state>
               </provider>
             </entry>
@@ -173,8 +175,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jupyter Notebook" />
         <option value="Python Script" />
+        <option value="Jupyter Notebook" />
       </list>
     </option>
   </component>
@@ -192,20 +194,22 @@
         <option value="$USER_HOME$/Downloads/BondEst/01 - Eurodollars.ipynb" />
         <option value="$USER_HOME$/Downloads/BondEst/01 - Money Supply.ipynb" />
         <option value="$USER_HOME$/Downloads/BondEst/01 - Long Rate.ipynb" />
-        <option value="$PROJECT_DIR$/DataIO/MetaDataFile.py" />
         <option value="$USER_HOME$/Downloads/BondEst/01 - NGDP.ipynb" />
         <option value="$USER_HOME$/Downloads/BondEst/01 - Short Rates.ipynb" />
+        <option value="$PROJECT_DIR$/DataIO/Credentials.py" />
         <option value="$USER_HOME$/Downloads/BondEst/Data Review.ipynb" />
         <option value="$PROJECT_DIR$/DataIO/DataLib.py" />
-        <option value="$PROJECT_DIR$/DataIO/PullDataTest.py" />
         <option value="$PROJECT_DIR$/TestNotebook.ipynb" />
-        <option value="$PROJECT_DIR$/DataIO/Credentials.py" />
+        <option value="$PROJECT_DIR$/DataIO/PullDataTest.py" />
+        <option value="$PROJECT_DIR$/DataIO/MetaDataFile.py" />
+        <option value="$PROJECT_DIR$/SampleSignal/0_SignalDataLibrary.py" />
+        <option value="$PROJECT_DIR$/SampleSignal/DataViewTest.ipynb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="22" />
-    <option name="y" value="27" />
+    <option name="x" value="44" />
+    <option name="y" value="49" />
     <option name="width" value="2258" />
     <option name="height" value="953" />
   </component>
@@ -241,6 +245,11 @@
             </path>
             <path>
               <item name="BWInternship2020" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BWInternship2020" type="462c0819:PsiDirectoryNode" />
+              <item name="SampleSignal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BWInternship2020" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
@@ -257,6 +266,7 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -270,7 +280,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.PullDataTest">
+  <component name="RunManager" selected="Python.MetaDataFile">
+    <configuration name="0_SignalDataLibrary" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SampleSignal" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="BWInternship2020" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SampleSignal/0_SignalDataLibrary.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="BWInternship2020" type="Python.Ipnb" factoryName="Jupyter Notebook">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -300,23 +327,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="BWInternship2020" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataIO/Credentials.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="HelloWorld" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="BWInternship2020" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HelloWorld.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -374,19 +384,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Jupyter Notebook.BWInternship2020" />
-      <item index="1" class="java.lang.String" itemvalue="Python.HelloWorld" />
-      <item index="2" class="java.lang.String" itemvalue="Python.PullDataTest" />
-      <item index="3" class="java.lang.String" itemvalue="Python.credentialsStoreBuilder" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Credentials" />
-      <item index="5" class="java.lang.String" itemvalue="Python.MetaDataFile" />
+      <item index="1" class="java.lang.String" itemvalue="Python.PullDataTest" />
+      <item index="2" class="java.lang.String" itemvalue="Python.credentialsStoreBuilder" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Credentials" />
+      <item index="4" class="java.lang.String" itemvalue="Python.MetaDataFile" />
+      <item index="5" class="java.lang.String" itemvalue="Python.0_SignalDataLibrary" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.PullDataTest" />
-        <item index="1" class="java.lang.String" itemvalue="Python.MetaDataFile" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Credentials" />
-        <item index="3" class="java.lang.String" itemvalue="Python.credentialsStoreBuilder" />
-        <item index="4" class="java.lang.String" itemvalue="Python.HelloWorld" />
+        <item index="0" class="java.lang.String" itemvalue="Python.MetaDataFile" />
+        <item index="1" class="java.lang.String" itemvalue="Python.0_SignalDataLibrary" />
+        <item index="2" class="java.lang.String" itemvalue="Python.PullDataTest" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Credentials" />
+        <item index="4" class="java.lang.String" itemvalue="Python.credentialsStoreBuilder" />
       </list>
     </recent_temporary>
   </component>
@@ -425,14 +435,21 @@
       <option name="project" value="LOCAL" />
       <updated>1593666789269</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Got rid of my credentials (whoops!)">
+      <created>1593666921427</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1593666921427</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="22" y="27" width="2258" height="953" extended-state="0" />
+    <frame x="44" y="49" width="2258" height="953" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15899026" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.112488925" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291714" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -443,7 +460,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32576618" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962447" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32949513" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -459,14 +476,15 @@
     <MESSAGE value="Added credential builder." />
     <MESSAGE value="Added country metadata file" />
     <MESSAGE value="Can push and pull data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Can push and pull data" />
+    <MESSAGE value="Got rid of my credentials (whoops!)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Got rid of my credentials (whoops!)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/DataIO/DataLib.py</url>
-          <line>101</line>
+          <line>103</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -481,12 +499,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/DataIO/DataLib.py</url>
-          <line>91</line>
+          <line>93</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/DataIO/DataLib.py</url>
-          <line>99</line>
+          <line>101</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -501,17 +519,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/DataIO/DataLib.py</url>
-          <line>88</line>
+          <line>89</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/DataIO/DataLib.py</url>
-          <line>89</line>
+          <line>90</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/DataIO/DataLib.py</url>
-          <line>90</line>
+          <line>92</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -594,6 +612,11 @@
           <line>83</line>
           <option name="timeStamp" value="48" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/DataIO/DataLib.py</url>
+          <line>81</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -602,7 +625,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="49" />
+      <option name="time" value="50" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -650,14 +673,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.6/site-packages/pandas/io/parquet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -732,7 +747,7 @@
     <entry file="file://$USER_HOME$/Downloads/BondEst/01 - Long Rate.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="6" />
+          <selected id="5" />
         </state>
       </provider>
     </entry>
@@ -744,13 +759,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataIO/MetaDataFile.py">
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.6/site-packages/pandas/io/parquet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="83" column="23" lean-forward="true" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="113">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -761,24 +774,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/BondEst/01 - Short Rates.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/BondEst/Data Review.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="6" />
+          <selected id="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/BondEst/01 - Short Rates.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.6/site-packages/pydatastream/pydatastream.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8">
+          <caret line="392" column="8" lean-forward="false" selection-start-line="392" selection-start-column="8" selection-end-line="392" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DataIO/DataLib.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="59" column="45" lean-forward="true" selection-start-line="59" selection-start-column="45" selection-end-line="59" selection-end-column="45" />
+        <state relative-caret-position="230">
+          <caret line="82" column="30" lean-forward="true" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -788,25 +809,61 @@
     <entry file="file://$PROJECT_DIR$/TestNotebook.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="5" />
+          <selected id="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataIO/PullDataTest.py">
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2017.2/python_stubs/1964723179/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="2978" column="6" lean-forward="false" selection-start-line="2978" selection-start-column="6" selection-end-line="2978" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DataIO/Credentials.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="61" lean-forward="false" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="61" />
+          <caret line="4" column="45" lean-forward="false" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataIO/MetaDataFile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="97" column="65" lean-forward="true" selection-start-line="97" selection-start-column="65" selection-end-line="97" selection-end-column="65" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataIO/PullDataTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleSignal/DataViewTest.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleSignal/0_SignalDataLibrary.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="35" column="63" lean-forward="true" selection-start-line="35" selection-start-column="63" selection-end-line="35" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#63#0" expanded="true" />
+            <element signature="e#349#751#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

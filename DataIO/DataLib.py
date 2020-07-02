@@ -86,9 +86,11 @@ class DatastreamPulls:
         else:
             tickers = [tick_format(c) for c in countries]
         if isinstance(ds_fields, str):
+            tickerDict = dict(zip(tickers,countries))
             data = datastream.fetch(tickers, fields=ds_fields, freq=freq, date_from=start_date)
             data = data.unstack(0).to_period(freq)
-            data.columns = countries
+            dataCols = [cols[1] for cols in data.columns]
+            data.columns = [tickerDict[tick] for tick in dataCols]
         elif callable(ds_fields):
             pulls = []
             for (country,ticker) in zip(countries,tickers):
