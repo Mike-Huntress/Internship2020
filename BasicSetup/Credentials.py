@@ -1,4 +1,4 @@
-from DataIO.CredentialsStoreBuilder import DataSourceCredentials
+from BasicSetupUtilities.CredentialsStoreBuilder import DataSourceCredentials
 
 
 DataSourceCredentials().addCredentials("datastream", "Your Username", "Your Password")

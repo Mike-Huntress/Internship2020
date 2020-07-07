@@ -1,11 +1,9 @@
-import os
 import glob
-import pandas as pd
 import os
-import quandl as raw_quandl
-from datetime import datetime
-from DataIO.CredentialsStoreBuilder import SourceCredentials, DataSourceCredentials
-import configparser
+
+import pandas as pd
+
+from BasicSetupUtilities.CredentialsStoreBuilder import DataSourceCredentials
 
 
 class DataLib:
@@ -88,9 +86,13 @@ class DatastreamPulls:
         if isinstance(ds_fields, str):
             tickerDict = dict(zip(tickers,countries))
             data = datastream.fetch(tickers, fields=ds_fields, freq=freq, date_from=start_date)
-            data = data.unstack(0).to_period(freq)
-            dataCols = [cols[1] for cols in data.columns]
-            data.columns = [tickerDict[tick] for tick in dataCols]
+            if(len(countries)<2):
+                data = data.to_period(freq)
+                data.columns = countries
+            else:
+                data = data.unstack(0).to_period(freq)
+                dataCols = [cols[1] for cols in data.columns]
+                data.columns = [tickerDict[tick] for tick in dataCols]
         elif callable(ds_fields):
             pulls = []
             for (country,ticker) in zip(countries,tickers):
