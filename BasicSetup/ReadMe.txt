@@ -1,3 +1,67 @@
+First, you need to setup some tools/ environments, and then once the project is setup, there are some data initialization steps
+
+A. Setup Tools/Environment:
+We need to do three things to get going:
+1. Make sure you have the right verison of python installed
+2. Make sure you have the right packages setup in a virtual environment designed to ensure all code is compatible
+3. Pull the project from github
+4. Setup an IDE to make development easier
+
+Step 1:First, make sure you have python 3 installed. Download the Anaconda bundle here, which includes python 3,
+       and some other tools we'll use:
+       https://www.anaconda.com/products/individual
+
+Step 2: To download this from github, go to your terminal command prompt and type: https://github.com/Mike-Huntress/Intership2020.git
+        -This will create a copy of project in your local directory.
+        -Set the working directory to the newly checkouted out code with:
+         cd [put the path to the newly checked out code here]
+        -Once you've done that, you should create your own development branch to work on with:
+         git checkout -b bondSignal_[FirstnameLastname]
+        -When it comes time to share your code, you can commit with these commands:
+         git commit -m "Your commit message"   , followed by
+         git push   , which will push your code to the github server on your new branch
+
+Step 3: To make sure your local version of python and the associated packages are compatible with utilities we've
+        made to make this work easier, you're going to need to spin up a python virtual environment with pipenv,
+        a virtual environment and package manager. As part of your Anaconda download, a piece of package management
+        software called pip was installed that we're going to run from your terminal/ command line. We're going to
+        it to fetch some other tools that will help manage our packages more cleanly. Run this in the terminal/command line:
+
+        sudo -H pip install -U pipenv
+        cd [path to the project we just cloned in step 2]
+        pipenv install
+        pipenv shell
+
+        This will return some text, including a directory path, e.g.:
+        /Users/michaelhuntress/.local/share/virtualenvs/BWInternship2020-qGgbmmCS/bin/activate
+
+        Save this path. This new "virtual environment" is a container that will house the right interpreter (python version),
+        and associated packages to use in this project. It's out of here we're going to run out code.
+
+Step 4: Next, we're going to go get an IDE (integrated development environment), which will make it easier to write
+        code in. There are many, and you're welcome to use a different one, but I like this one, PyCharm
+        https://www.jetbrains.com/pycharm/download/#section=mac
+
+        Download the community version.
+
+        -Once you've done this, open an existing project from the directory where we cloned the porject code.
+        -Now we need to tell it to run the python interpreter out of the virtual environemnt we created in step 3:
+          -Go to Preferences -> Project -> Project Interpreter
+          -Select the * button, click "add local", and then in the directory menu that appears select the directory
+         path the terminal/command line returned to you in step 3, e.g. /Users/michaelhuntress/.local/share/virtualenvs/BWInternship2020-qGgbmmCS/bin/activate
+
+        - You can check this is working by running any script in pyCharm. At the top of the pyCharm terminal will
+          show the interpreter and the file run. E.g.:
+          /Users/michaelhuntress/.local/share/virtualenvs/BWInternship2020-qGgbmmCS/bin/python3.6 /Users/michaelhuntress/PycharmProjects/BWInternship2020/BasicSetup/CountryMetaData.py
+
+          So here, for instance, I see it's running out of my virtual environment.
+
+
+
+
+
+
+B. Data Initialization Steps
 You need to perform a few initial setup steps.You'll need to:
 1. Write your data stream (Eikon) credentials to a local file
 2. Create a country metadata file that will also be stored locally (you'll use this over and over)
