@@ -29,10 +29,11 @@ Step 3: To make sure your local version of python and the associated packages ar
 
         sudo -H pip install -U pipenv
         cd [path to the project we just cloned in step 2]
-        pipenv install
         pipenv shell
+        pipenv install
 
-        This will return some text, including a directory path, e.g.:
+
+        After running "pienv shell", the terminal will return some text, including a directory path, e.g.:
         /Users/michaelhuntress/.local/share/virtualenvs/BWInternship2020-qGgbmmCS/bin/activate
 
         Save this path. This new "virtual environment" is a container that will house the right interpreter (python version),

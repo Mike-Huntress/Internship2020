@@ -57,5 +57,5 @@ dl.write_data("fxTrdWts/Real", fxRealPrices_TrdWts.to_timestamp())
 dl.write_data("fxVsUSD", fxVsUSD.to_timestamp())
 dl.write_data("CoreCPI/SA", coreCPI_SA.to_timestamp())
 
-
+print("Success: Built Data Library")
 
