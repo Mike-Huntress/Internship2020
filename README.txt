@@ -11,7 +11,13 @@ Step 1:First, make sure you have python 3 installed. Download the Anaconda bundl
        and some other tools we'll use:
        https://www.anaconda.com/products/individual
 
-Step 2: To download this from github, go to your terminal command prompt and type: https://github.com/Mike-Huntress/Intership2020.git
+Step 2a: If you don't have git, you need to download it:
+         https://git-scm.com/downloads
+
+         Use the defaults for installation.
+
+Step 2b: To download this from github, go to your terminal command prompt and type:
+        git clone https://github.com/Mike-Huntress/Intership2020.git
         -This will create a copy of project in your local directory.
         -Set the working directory to the newly checkouted out code with:
          cd [put the path to the newly checked out code here]
@@ -25,13 +31,19 @@ Step 3: To make sure your local version of python and the associated packages ar
         made to make this work easier, you're going to need to spin up a python virtual environment with pipenv,
         a virtual environment and package manager. As part of your Anaconda download, a piece of package management
         software called pip was installed that we're going to run from your terminal/ command line. We're going to
-        it to fetch some other tools that will help manage our packages more cleanly. Run this in the terminal/command line:
+        it to fetch some other tools that will help manage our packages more cleanly.
 
+        *If using a MacOS/ Linux OS, run this in the terminal/command line:
         sudo -H pip install -U pipenv
+        *If using a windows machine, open the Anaconda powershell (should be an available program) and run
+        pip install pipenv
+        *In either environment, then do:
         cd [path to the project we just cloned in step 2]
         pipenv shell
         pipenv install
-
+        *There's a chance it may tell you you don't have python 3.6. If so, just type:
+        conda install python=3.6
+        pipenv install
 
         After running "pienv shell", the terminal will return some text, including a directory path, e.g.:
         /Users/michaelhuntress/.local/share/virtualenvs/BWInternship2020-qGgbmmCS/bin/activate
@@ -45,11 +57,14 @@ Step 4: Next, we're going to go get an IDE (integrated development environment),
 
         Download the community version.
 
-        -Once you've done this, open an existing project from the directory where we cloned the porject code.
+        -Once you've done this, open an existing project from the directory where we cloned the project code.
         -Now we need to tell it to run the python interpreter out of the virtual environemnt we created in step 3:
           -Go to Preferences -> Project -> Project Interpreter
-          -Select the * button, click "add local", and then in the directory menu that appears select the directory
-         path the terminal/command line returned to you in step 3, e.g. /Users/michaelhuntress/.local/share/virtualenvs/BWInternship2020-qGgbmmCS/bin/activate
+          -Select the settings button
+          -Click "add" and select the System Interpreter option in the right panel
+          -Then in the directory menu that appears select the directory
+           path the terminal/command line returned to you in step 3, e.g.
+            /Users/michaelhuntress/.local/share/virtualenvs/BWInternship2020-qGgbmmCS/bin/activate
 
         - You can check this is working by running any script in pyCharm. At the top of the pyCharm terminal will
           show the interpreter and the file run. E.g.:
@@ -67,7 +82,7 @@ You need to perform a few initial setup steps.You'll need to:
 1. Write your data stream (Eikon) credentials to a local file
 2. Create a country metadata file that will also be stored locally (you'll use this over and over)
 3. Pull an initial batch of data and write to a local file where you can quickly and easily pull from
-4. Make sure you can run Jupyter notebooks from within PyCharm
+4. Make sure you can run Jupyter notebooks from your virtual environment
 
 
 
@@ -94,21 +109,9 @@ user directory under a series of folders nested under the .dataLib folder create
 
 Step 4: Make sure you can run Jupyter notebooks from within PyCharm
 Although there are lots of potential ways you might use an IDE, a combination I like (and thus will impose upon you),
-is the PyCharm IDE used in conjunction with a jupyter notebook to serve as a scratch pad. You can open them up in parallel
-windows and run the jupyter notebook out of PyCharm in a pretty nice side by side experiances.
+is the PyCharm IDE used in conjunction with a jupyter notebook to serve as a scratch pad.
 
-First, go to your terminal/command line and enter "jupyter notebook". If you installed Anaconda this should instantiate the
-locally hosted jupyter notebook and give you a link and token to access that notebook:
-e.g.:
-    Copy/paste this URL into your browser when you connect for the first time,
-    to login with a token:
-        http://localhost:8889/?token=9a30c4ba98a483ae652282dfa41a8e56e0e560b8d96beb22
-
-Copy this link and open up the DataBrowser.ipynb file in the SampleSignal package. Hit the green arrow to "run cell". It'll open a
-dialogue box asking for a token. Copy your URL with the embedded token in this window and hit ok. Now your jupyter notebook in
-Pycharm should be working. Run a couple cells in the file to make sure this is true.
-
-A thing I like doing is splitting the python window into a horizontal pane. Right click the "DataBrowser.ipynb" tab at the top of your
-PyCharm window and hit "Split Horizontally". You should now have split windows with the notebook off to the right.
+First, go to your terminal/command line and enter "pipenv run jupyter notebook". If you installed Anaconda this should instantiate and open a jupyter
+notebook for you in a browser.
 
 
