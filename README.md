@@ -41,7 +41,7 @@ These steps look a lot like the steps provided below to setup and run locally, b
 environment running on the virtual box.
 
 ###### Update the OS:
-1. Launch the terminal
+1. Open terminal
 2. Run: `sudo apt update && sudo apt upgrade -y`
 3. Restart your virtual box (restart)
 
@@ -72,7 +72,8 @@ and push.
 Git basics: https://rogerdudler.github.io/git-guide/
 
 ###### Setup Python/Jupyter path
-1. From terminal, run: `echo 'export JUPYTER_CONFIG_DIR=/home/osboxes/Internship2020' >> ~/.bashrc`
+1. Open terminal
+2. Run: `echo 'export JUPYTER_CONFIG_DIR=/home/osboxes/Internship2020' >> ~/.bashrc`
 
 ###### Build required python library versions
 1. Open terminal
@@ -82,8 +83,6 @@ Git basics: https://rogerdudler.github.io/git-guide/
 5. Run: `pipenv install`
 Note, after running `pipenv shell`, the terminal will return some text, including a directory path, e.g.:
  /home/osboxes/.local/share/virtualenvs/Internship2020-9Y4UyjGC/bin/activate
-
-
 
 ###### Final Step: Ensure PyCharm is running the right python interpreter
 1. Open PyCharm and open the project we cloned from githib (Internship2020)
@@ -102,8 +101,7 @@ Note, after running `pipenv shell`, the terminal will return some text, includin
       /home/osboxes/.local/share/virtualenvs/Internship2020-9Y4UyjGC/bin/python3.6  ...
       /home/osboxes/PycharmProjects/BWInternship2020/BasicSetup/CountryMetaData.py
 
-You should be done. Move on to
-
+You should be done. Move on to [Data Initialization Steps](#data-initialization-steps)
 
 
 ### Environment B. To Get Local Version Implementation Setup:
