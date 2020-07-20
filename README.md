@@ -45,7 +45,7 @@ environment running on the virtual box.
 2. run: sudo apt update $$ sudo apt upgrade -y
 3. restart your virtual box (restart)
 
-######Install git - version control software
+###### Install git - version control software
 1. open terminal
 2. run: sudo apt install git
 
