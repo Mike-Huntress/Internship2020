@@ -127,12 +127,12 @@ We need to do three things to get going:
 
 #### Step 2b: To download this from github, go to your terminal command prompt and type:
         git clone https://github.com/Mike-Huntress/Intership2020.git
-        -This will create a copy of project in your local directory.
-        -Set the working directory to the newly checkouted out code with:
+        - This will create a copy of project in your local directory.
+        - Set the working directory to the newly checkouted out code with:
          cd [put the path to the newly checked out code here]
-        -Once you've done that, you should create your own development branch to work on with:
+        - Once you've done that, you should create your own development branch to work on with:
          git checkout -b bondSignal_[FirstnameLastname]
-        -When it comes time to commit your code, you can commit with these commands:
+        - When it comes time to commit your code, you can commit with these commands:
          git commit -m "Your commit message"   , followed by
          git push   , which will push your code to the github server on your new branch
 
@@ -166,12 +166,12 @@ We need to do three things to get going:
 
         Download the community version.
 
-        -Once you've done this, open an existing project from the directory where we cloned the project code.
-        -Now we need to tell it to run the python interpreter out of the virtual environemnt we created in step 3:
-          -Go to Preferences -> Project -> Project Interpreter
-          -Select the settings button
-          -Click "add" and select the System Interpreter option in the right panel
-          -Then in the directory menu that appears select the directory
+        - Once you've done this, open an existing project from the directory where we cloned the project code.
+        - Now we need to tell it to run the python interpreter out of the virtual environemnt we created in step 3:
+          - Go to Preferences -> Project -> Project Interpreter
+          - Select the settings button
+          - Click "add" and select the System Interpreter option in the right panel
+          - Then in the directory menu that appears select the directory
            path the terminal/command line returned to you in step 3, e.g.
             /Users/michaelhuntress/.local/share/virtualenvs/BWInternship2020-qGgbmmCS/bin/activate
 
