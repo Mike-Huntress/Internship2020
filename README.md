@@ -1,6 +1,6 @@
 # Setup Steps
 
-First, you need to setup some tools/ environments, and then once the project is setup, there are some data initialization steps.
+First, you need to setup some tools/environments, and then once the project is setup, there are some data initialization steps.
 
 ## Environments and Tools:
 To ensure this setup works on everyone's particular machine configuration, we're going to run this project our of a
@@ -8,7 +8,6 @@ virtual box, an open source Oracle project that let's you run any operating syst
 software on a virtual machine. For anyone who finds the small annoyances of using Linux (learning a new tool) from a
 virtual machine (depending on your physical machine, there may be a bit of a lag) too much to bear, you can run this
 project from your local machine just fine but you may have to sort through some setup steps on your own.
-
 
 
 ### Environment A. To Get Virtual Box Implementation Setup:
@@ -40,51 +39,49 @@ on it, then install some software on that box.
 #### Software installation:
 These steps look a lot like the steps provided below to setup and run locally, but are specific to the linux
 environment running on the virtual box.
+
 ###### Update the OS:
 1. Launch the terminal
-2. run: sudo apt update $$ sudo apt upgrade -y
-3. restart your virtual box (restart)
+2. Run: `sudo apt update && sudo apt upgrade -y`
+3. Restart your virtual box (restart)
 
 ###### Install git - version control software
-1. open terminal
-2. run: sudo apt install git
+1. Open terminal
+2. Run: `sudo apt install git`
 
 ###### Install pycharm - IDE for python
-1. open terminal
-2. run: sudo snap install pycharm-community --classic
+1. Open terminal
+2. Run: `sudo snap install pycharm-community --classic`
 
 ###### Install Anaconda python packages and python
 1. Download the Anaconda bundle here, which includes python 3, and some other tools we'll use:
    https://www.anaconda.com/products/individual
-2. open the terminal and run: pip3 install conda
-3. from the terminal run: conda install python=3.6
+2. Open the terminal and run: `pip3 install conda`
+3. From the terminal run: `conda install python=3.6`
 
 ###### Download project from github
-1. open terminal
-2. run: git clone https://github.com/Mike-Huntress/Internship2020.git
-3. run: git cd﻿/home/osboxes/Internship2020 [this is where you just cloned to]
-4. run: git checkout -b bondSignal_FirstName.LastName
-5. run: git commit -m "Initial Commit"
-6. run: git push
-Now you'll be working from your own branch. Commit regurally. If something happened to your virtual environment and all
+1. Open terminal
+2. Run: `git clone https://github.com/Mike-Huntress/Internship2020.git`
+3. Run: `git cd /home/osboxes/Internship2020` [this is where you just cloned to]
+4. Run: `git checkout -b bondSignal_FirstName.LastName`
+5. Run: `git commit -m "Initial Commit"`
+6. Run: `git push`
+Now you'll be working from your own branch. Commit regularly. If something happened to your virtual environment and all
 your local files got deleted, that would suck. Commit and push often. From within pycharm, you can use ctrl+k to commit
 and push.
 Git basics: https://rogerdudler.github.io/git-guide/
 
 ###### Setup Python/Jupyter path
-1. launch terminal - set directory to root (run: cd)
-2. run: nano ~/.bashrc
-3. type: export JUPYTER_CONFIG_DIR=/home/osboxes/Internship2020
-4. Press ctrl+x to exit nano (create abd save the file when prompted)
+1. From terminal, run: `echo 'export JUPYTER_CONFIG_DIR=/home/osboxes/Internship2020' >> ~/.bashrc`
 
 ###### Build required python library versions
 1. Open terminal
-2. run: cd /home/osboxes/Internship2020
-3. run: sudo -H pip3 install -U pipenv
-4. run: pipenv shell
-5. run: pipenv install
-Note, after running "pipenv shell", the terminal will return some text, including a directory path, e.g.:
-﻿/home/osboxes/.local/share/virtualenvs/Internship2020-9Y4UyjGC/bin/activate
+2. Run: `cd /home/osboxes/Internship2020`
+3. Run: `sudo -H pip3 install -U pipenv`
+4. Run: `pipenv shell`
+5. Run: `pipenv install`
+Note, after running `pipenv shell`, the terminal will return some text, including a directory path, e.g.:
+ /home/osboxes/.local/share/virtualenvs/Internship2020-9Y4UyjGC/bin/activate
 
 
 
