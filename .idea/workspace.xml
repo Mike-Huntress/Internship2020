@@ -103,8 +103,8 @@
       <file leaf-file-name="README.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="557">
+              <caret line="220" column="3" lean-forward="false" selection-start-line="220" selection-start-column="3" selection-end-line="220" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -465,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595275361599</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Changed readme">
+      <created>1595282965173</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1595282965173</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -832,8 +839,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="557">
+          <caret line="220" column="3" lean-forward="false" selection-start-line="220" selection-start-column="3" selection-end-line="220" selection-end-column="3" />
           <folding />
         </state>
       </provider>
