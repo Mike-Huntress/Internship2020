@@ -1,5 +1,8 @@
 import os, shutil, configparser
+from pathlib import Path
+
 import pandas as pd
+
 
 class CountryMetaData:
     def __init__(self, id, DatastreamCode, Name, DatastreamCurrency):
@@ -31,7 +34,7 @@ def buildCountryMetaDataRow(id, DatastreamCode, Name, DatastreamCurrency):
         config.write(f)
 
 class CountryMetaDataFile:
-    user_config_dir = os.path.expanduser("~") + "/.datalib"
+    user_config_dir = str(Path(__file__).absolute().parent.parent/".datalib")
     user_config = user_config_dir + "/countryMetaData.ini"
 
     def _init__(self):

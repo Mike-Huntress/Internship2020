@@ -1,12 +1,15 @@
 import glob
 import os
+from pathlib import Path
+
 import pandas as pd
+
 from BasicSetupUtilities.CredentialsStoreBuilder import DataSourceCredentials
 
 
 class DataLib:
     def __init__(self, write_prefix):
-        self.base_dir = os.path.expanduser(os.path.join("~", ".datalib"))
+        self.base_dir = str(Path(__file__).absolute().parent.parent/".datalib")
         self.data_filename = "data"
         self.write_prefix = write_prefix
 
