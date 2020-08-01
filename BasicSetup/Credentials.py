@@ -1,5 +1,10 @@
+import getpass
+
 from BasicSetupUtilities.CredentialsStoreBuilder import DataSourceCredentials
 
-
-DataSourceCredentials().addCredentials("datastream", "Your Username", "Your Password")
-DataSourceCredentials().readCredentials("datastream").print()
+DataSourceCredentials().addCredentials(
+    "datastream",
+    input("Username: "),
+    getpass.getpass("Password: ")
+)
+DataSourceCredentials().readCredentials("datastream")
