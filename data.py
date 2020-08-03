@@ -8,6 +8,8 @@ retrieval, storage, and labeling of data.
 """
 
 from typing import Tuple, List
+
+
 COUNTRIES = [
     'USA', 'AUS', 'JPN', 'CAN', 'CHE', 'GBR', 'ESP', 'FRA', 'ITA', 'DEU'
 ]
