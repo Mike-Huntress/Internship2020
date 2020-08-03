@@ -28,7 +28,7 @@ Use the defaults for installation.
 
 #### Step 2b: Download github repo
 To download this from github, go to your terminal command prompt and type:
-`git clone https://github.com/Mike-Huntress/Intership2020.git`
+`git clone https://github.com/Mike-Huntress/Internship2020.git`
 - This will create a copy of project in your local directory.
 - Set the working directory to the newly checkouted out code with:
  `cd [put the path to the newly checked out code here]`
