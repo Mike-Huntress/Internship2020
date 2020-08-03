@@ -7,17 +7,19 @@ retrieval, storage, and labeling of data.
 
 """
 
+from typing import Tuple, List
 COUNTRIES = [
     'USA', 'AUS', 'JPN', 'CAN', 'CHE', 'GBR', 'ESP', 'FRA', 'ITA', 'DEU'
 ]
 
 
-def get_all_data_and_labels():
+def get_all_data_and_labels() -> Tuple[List[str], List['pd.DataFrame']]:
     """
     Gets all data from the DataLib.
 
     Returns:
-
+        all_labels: a list of string labels for each corresponding DataFrame.
+        all_data: a list of DataFrame for each data source.
 
     """
 
