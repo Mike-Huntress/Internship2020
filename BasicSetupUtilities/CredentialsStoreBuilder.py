@@ -1,4 +1,6 @@
 import os, shutil, configparser
+from pathlib import Path
+
 
 class SourceCredentials:
     def __init__(self, source, user, password):
@@ -29,7 +31,9 @@ class DataSourceCredentials:
         self
 
     def addCredentials(self,source, user, password):
-        user_config_dir = os.path.expanduser("~") + "/ConfigKeys"
+        user_config_dir = str(
+            Path(__file__).absolute().parent.parent/'ConfigKeys'
+        )
         user_config = user_config_dir + "/user_config.ini"
 
         if not os.path.isfile(user_config):
@@ -54,7 +58,9 @@ class DataSourceCredentials:
 
     def readCredentials(self, name):
         config = configparser.ConfigParser()
-        user_config_dir = os.path.expanduser("~") + "/ConfigKeys"
+        user_config_dir = str(
+            Path(__file__).absolute().parent.parent/'ConfigKeys'
+        )
         user_config = user_config_dir + "/user_config.ini"
         with open(user_config) as f:
             config.read(user_config)
