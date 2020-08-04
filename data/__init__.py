@@ -1,1 +1,1 @@
-from data import *
+from data.data import *

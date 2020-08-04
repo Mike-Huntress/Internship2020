@@ -15,9 +15,14 @@ COUNTRIES = [
 ]
 
 
-def get_all_data_and_labels() -> Tuple[List[str], List['pd.DataFrame']]:
+def get_all_data_and_labels(
+    cleaned: bool = False
+) -> Tuple[List[str], List['pd.DataFrame']]:
     """
     Gets all data from the DataLib.
+
+    Args:
+        cleaned: whether to retrieve the cleaned data.
 
     Returns:
         all_labels: a list of string labels for each corresponding DataFrame.
@@ -47,22 +52,23 @@ def get_all_data_and_labels() -> Tuple[List[str], List['pd.DataFrame']]:
         'm3_usd'
     ]
 
+    prefix = 'Cleaned/' if cleaned else ''
     all_data = [
-        dl.pull('BondRetIdx/LocalFX'),
-        dl.pull('EquityPrices'),
-        dl.pull('CurrAcctNom/inUSD'),
-        dl.pull('CurrAcctPctGDP'),
-        dl.pull('fxTrdWts/Nominal'),
-        dl.pull('fxTrdWts/Real'),
-        dl.pull('fxVsUSD'),
-        dl.pull('GDP/Nominal'),
-        dl.pull('GDP/Real'),
-        dl.pull('ShortRates'),
-        dl.pull('LongRates'),
-        dl.pull('CoreCPI/SA'),
-        dl.pull('M1/inUSD'),
-        dl.pull('M2/inUSD'),
-        dl.pull('M3/inUSD')
+        dl.pull(prefix + 'BondRetIdx/LocalFX'),
+        dl.pull(prefix + 'EquityPrices'),
+        dl.pull(prefix + 'CurrAcctNom/inUSD'),
+        dl.pull(prefix + 'CurrAcctPctGDP'),
+        dl.pull(prefix + 'fxTrdWts/Nominal'),
+        dl.pull(prefix + 'fxTrdWts/Real'),
+        dl.pull(prefix + 'fxVsUSD'),
+        dl.pull(prefix + 'GDP/Nominal'),
+        dl.pull(prefix + 'GDP/Real'),
+        dl.pull(prefix + 'ShortRates'),
+        dl.pull(prefix + 'LongRates'),
+        dl.pull(prefix + 'CoreCPI/SA'),
+        dl.pull(prefix + 'M1/inUSD'),
+        dl.pull(prefix + 'M2/inUSD'),
+        dl.pull(prefix + 'M3/inUSD')
     ]
 
     return all_data, all_labels
