@@ -12,6 +12,7 @@ matplotlib = "==2.0.2"
 jupyter = "==1.0.0"
 pyarrow = "==0.17.1"
 importlib-resources = "*"
+pypiwin32 = "*"
 
 [requires]
 python_version = "3.6"
