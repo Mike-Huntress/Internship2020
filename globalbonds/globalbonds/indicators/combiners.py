@@ -9,7 +9,7 @@ class Combiner:
 
     def median_value(tbl):
         """Return the median value of the last row of tbl."""
-        return tbl.iloc[-1].mean()
+        return tbl.iloc[-1].median()
 
     def mean_first_derivative(tbl):
         """Return the first derivative of the mean value."""
