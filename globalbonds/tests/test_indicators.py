@@ -14,6 +14,10 @@ DATA_LIB = DataLib(join(dirname(__file__), '../SignalData'))
 class TestIndicators(TestCase):
     """Default Test suite for globalbonds Indicators."""
 
+    def test_plot_signal(self):
+        signal = Signal.from_ticker('BondRetIdx-LocalFX', DATA_LIB)
+        signal.plot()
+
     def test_instantiate_signals(self):
         for ticker in DATA_LIB.list():
             Signal.from_ticker(ticker, DATA_LIB)

@@ -20,6 +20,7 @@ class TimeSeriesSet:
         tbl = self.tbl
         tbl[name] = tbl.index.to_series().map(lambda x: x.to_timestamp())
         tbl = tbl.melt(id_vars=name)
+        return tbl
 
     def plot_tbl(self, ylabel='value', inject=lambda x: x):
         tbl = self.long_form()
