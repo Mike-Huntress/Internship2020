@@ -39,7 +39,7 @@ class Indicator:
         wide = pd.DataFrame({
             metric_name: self._combine_signals(metric, date)
             for metric_name, metric in self.metrics.items()
-        })
+        }).T
         wide['metric'] = wide.index.to_series()
         longform = wide.melt(id_vars='metric')
         longform['date'] = date
