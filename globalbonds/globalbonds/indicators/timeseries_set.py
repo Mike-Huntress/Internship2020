@@ -17,7 +17,7 @@ class TimeSeriesSet:
         pass
 
     def long_form(self, name='date'):
-        tbl = self.tbl
+        tbl = self.tbl.copy()
         tbl[name] = tbl.index.to_series().map(lambda x: x.to_timestamp())
         tbl = tbl.melt(id_vars=name)
         return tbl
