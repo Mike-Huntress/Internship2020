@@ -6,7 +6,7 @@ import setuptools
 
 setuptools.setup(
     name='globalbonds',
-    version='0.1.0',
+    version='0.1.1',
     description="",
     author="David C. Danko",
     author_email='dcdanko@gmail.com',
@@ -21,6 +21,7 @@ setuptools.setup(
         'umap-learn',
         'pyarrow==0.17.1',
         'pydatastream==0.6.2',
+        'plotnine',
     ],
     entry_points={
         'console_scripts': [

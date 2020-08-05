@@ -29,8 +29,10 @@ class DataLib:
         data.to_parquet(data_file, compression="gzip")
 
     def list(self, prefix=""):
+        out = []
         for path in glob(join(self.data_dir, "**", self.write_prefix + "*"), recursive=True):
-            print(relpath(split(path)[0], self.data_dir))
+            out.append(relpath(split(path)[0], self.data_dir))
+        return out
 
     def __call__(self, address, **kwargs):
         for ext, reader in [("parquet", pd.read_parquet)]:
