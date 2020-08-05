@@ -14,11 +14,15 @@ class Combiner:
     def mean_first_derivative(tbl):
         """Return the first derivative of the mean value."""
         means = tbl.mean()
+        if means.shape[0] < 2:
+            return float('nan')
         first_deriv = means.iloc[-1] - means.iloc[-2]
         return first_deriv
 
     def median_first_derivative(tbl):
         """Return the first derivative of the mean value."""
         medians = tbl.median()
+        if medians.shape[0] < 2:
+            return float('nan')
         first_deriv = medians.iloc[-1] - medians.iloc[-2]
         return first_deriv

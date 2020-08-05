@@ -22,7 +22,7 @@ class TimeSeriesSet:
         tbl = tbl.melt(id_vars=name)
         return tbl
 
-    def plot_tbl(self, ylabel='value', inject=lambda x: x):
+    def plot(self, ylabel='value', inject=lambda x: x):
         tbl = self.long_form()
         tbl = inject(tbl)
         return (
