@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5ca5f69-bd6d-4f20-9e01-c33817bcb1b3" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/BWInternship2020.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BWInternship2020.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicSetup/Credentials.py" beforeDir="false" afterPath="$PROJECT_DIR$/BasicSetup/Credentials.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleSignal/0_SignalDataLibrary.py" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/0_SignalDataLibrary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleSignal/DataBrowser.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/DataBrowser.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleSignal/Python_Demo.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/Python_Demo.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,18 +29,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="10" />
-    <option name="y" value="33" />
-    <option name="width" value="1438" />
-    <option name="height" value="794" />
-  </component>
+  <component name="ProjectId" id="1faNTLAYmlyItuI6u1RQ62BSh5O" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.local/share/virtualenvs/BWInternship2020-qGgbmmCS/bin/python3.6" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SearchEverywhereHistoryKey" value="DataIO&#9;null&#9;null" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -45,7 +50,7 @@
       <recent name="$PROJECT_DIR$/BasicSetup" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.CountryMetaData">
+  <component name="RunManager" selected="Python.0_SignalDataLibrary">
     <configuration name="0_SignalDataLibrary" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="BWInternship2020" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -176,14 +181,15 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.0_SignalDataLibrary" />
         <item itemvalue="Python.CountryMetaData" />
         <item itemvalue="Python.Credentials" />
-        <item itemvalue="Python.0_SignalDataLibrary" />
         <item itemvalue="Python.1_ExampleCode" />
         <item itemvalue="Python.MetaDataFile" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -316,10 +322,35 @@
     <option name="LAST_COMMIT_MESSAGE" value="Changed readme" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1595859594077">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="260" y="349" key="FileChooserDialogImpl" timestamp="1596452982212">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="260" y="349" key="FileChooserDialogImpl/0.23.1792.1097@0.23.1792.1097" timestamp="1596452982212" />
+    <state width="875" height="303" key="GridCell.Tab.0.bottom" timestamp="1596648418748">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="875" height="303" key="GridCell.Tab.0.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1596648418748" />
+    <state width="875" height="303" key="GridCell.Tab.0.center" timestamp="1596648418747">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="875" height="303" key="GridCell.Tab.0.center/0.23.1792.1097@0.23.1792.1097" timestamp="1596648418747" />
+    <state width="875" height="303" key="GridCell.Tab.0.left" timestamp="1596648418746">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="875" height="303" key="GridCell.Tab.0.left/0.23.1792.1097@0.23.1792.1097" timestamp="1596648418746" />
+    <state width="875" height="303" key="GridCell.Tab.0.right" timestamp="1596648418747">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="875" height="303" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1596648418747" />
+    <state x="0" y="210" width="900" height="722" key="SettingsEditor" timestamp="1596452992935">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="0" y="210" width="900" height="722" key="SettingsEditor/0.23.1792.1097@0.23.1792.1097" timestamp="1596452992935" />
+    <state x="503" y="216" width="784" height="903" key="search.everywhere.popup" timestamp="1596452255803">
+      <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1595859594077" />
+    <state x="503" y="216" width="784" height="903" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1596452255803" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
