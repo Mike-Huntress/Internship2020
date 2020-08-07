@@ -1,0 +1,17 @@
+README.md
+setup.py
+BasicSetup/CountryMetaData.py
+BasicSetup/Credentials.py
+BasicSetup/__init__.py
+BasicSetupUtilities/CredentialsStoreBuilder.py
+BasicSetupUtilities/MetaDataBuilder.py
+BasicSetupUtilities/__init__.py
+DataIOUtilities/DataLib.py
+DataIOUtilities/__init__.py
+SampleSignal/0_SignalDataLibrary.py
+SampleSignal/1_ExampleCode.py
+SampleSignal/__init__.py
+internship2020.egg-info/PKG-INFO
+internship2020.egg-info/SOURCES.txt
+internship2020.egg-info/dependency_links.txt
+internship2020.egg-info/top_level.txt
