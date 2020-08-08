@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5ca5f69-bd6d-4f20-9e01-c33817bcb1b3" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/BWInternship2020.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BWInternship2020.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleSignal/DataBrowser.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/DataBrowser.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleSignal/Python_Demo.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/Python_Demo.ipynb" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,18 +28,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="10" />
-    <option name="y" value="33" />
-    <option name="width" value="1438" />
-    <option name="height" value="794" />
-  </component>
+  <component name="ProjectId" id="1fe4MA2xW7jSHy2MPw4HHPi9ISY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.local/share/virtualenvs/BWInternship2020-qGgbmmCS/bin/python3.6" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="SearchEverywhereHistoryKey" value="DataIO&#9;null&#9;null" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -45,7 +43,19 @@
       <recent name="$PROJECT_DIR$/BasicSetup" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.CountryMetaData">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.0_SignalDataLibrary">
     <configuration name="0_SignalDataLibrary" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="BWInternship2020" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -176,9 +186,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.CountryMetaData" />
-        <item itemvalue="Python.Credentials" />
         <item itemvalue="Python.0_SignalDataLibrary" />
+        <item itemvalue="Python.Credentials" />
+        <item itemvalue="Python.CountryMetaData" />
         <item itemvalue="Python.1_ExampleCode" />
         <item itemvalue="Python.MetaDataFile" />
       </list>
@@ -303,6 +313,19 @@
     <option name="localTasksCounter" value="16" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added credential builder." />
     <MESSAGE value="Added country metadata file" />
@@ -323,12 +346,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/DataIOUtilities/DataLib.py</url>
-          <option name="timeStamp" value="52" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
