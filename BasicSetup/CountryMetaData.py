@@ -1,3 +1,6 @@
+import sys
+sys.path.append('.')
+
 from BasicSetupUtilities.MetaDataBuilder import CountryMetaDataFile
 
 CountryMetaDataFile().addCountry("USA", "US", "United States", "USD")
