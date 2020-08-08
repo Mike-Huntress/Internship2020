@@ -1,0 +1,26 @@
+OVERVIEW OF CODE SO FAR
+Kenneth Shinn
+
+So far, I have written an overview of the project. There are 3 main components of the file Project/Indicators_Signal_Testing:
+1) The indicators
+2) The signal generator
+3) Testing the returns and visualizing the signals
+
+So far for the indicators, I'm working on the first one and starting brainstorming ideas for the second.
+The first one measures the difference in returns between bonds and equities. Logically, if equities are
+expected to have a higher return, then it is predicted that more people will invest in equites rather than bonds.
+It is currently measured as being the annual pct change in difference between equity and bond returns. However,
+it currently has  problems that need to be addressed. It's convoluted and doesn't express what I want it to
+in a direct way. That's primarily because the percent change in difference doesn't address the growth of bond
+or equity returns independently (that is, the information is lost).
+
+Currently the signal generator only takes in the first indicator, and goes short (-1) if the percent change of return
+difference is greater than .5. Otherwise it goes long. This rudientary signal is just supposed to represent when the
+expectations for equity outperformance is so great that it will negatively affect the bond market.
+
+The last section graphs our system's returns alongside the cummulative returns if one were to just passively hold the bonds.
+The system's signals are also graphed. Clearly, the trading system is currently performing poorly. To improve the system,
+I will first address the problems mentioned above with indicator 1, and then I will use indicator 2 to pick up what indicator
+1 fails to explain. This indicator 2 will likely be something related to the business cycle, as lower interest rates to spur
+the economy will cause both high equity returns and bond returns. So in this case, relative equity outperformance may not
+lead to lower bond returns. But, this will be something explored after indicator 1 is cleaned up.

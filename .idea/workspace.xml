@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5ca5f69-bd6d-4f20-9e01-c33817bcb1b3" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/Data exploration.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/BWInternship2020.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BWInternship2020.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleSignal/DataBrowser.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/DataBrowser.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleSignal/Python_Demo.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/Python_Demo.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleSignal/ScratchPad.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/ScratchPad.ipynb" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,27 +31,41 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="10" />
-    <option name="y" value="33" />
-    <option name="width" value="1438" />
-    <option name="height" value="794" />
-  </component>
+  <component name="ProjectId" id="1fZ994PzpwJhqH2EFoUmr3qEfKr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.local/share/virtualenvs/BWInternship2020-qGgbmmCS/bin/python3.6" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="DataIO&#9;null&#9;null" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Project/Development" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Project/Development" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Project" />
       <recent name="$PROJECT_DIR$/BasicSetupUtilities" />
       <recent name="$PROJECT_DIR$/SetupUtilities" />
       <recent name="$PROJECT_DIR$/BasicSetup" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.CountryMetaData">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.1_ExampleCode">
     <configuration name="0_SignalDataLibrary" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="BWInternship2020" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -58,6 +78,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SampleSignal/0_SignalDataLibrary.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -79,6 +100,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SampleSignal/1_ExampleCode.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -100,6 +122,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BasicSetup/CountryMetaData.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -121,6 +144,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BasicSetup/Credentials.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -142,6 +166,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BasicSetupUtilities/MetaDataBuilder.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -176,10 +201,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.1_ExampleCode" />
+        <item itemvalue="Python.0_SignalDataLibrary" />
         <item itemvalue="Python.CountryMetaData" />
         <item itemvalue="Python.Credentials" />
-        <item itemvalue="Python.0_SignalDataLibrary" />
-        <item itemvalue="Python.1_ExampleCode" />
         <item itemvalue="Python.MetaDataFile" />
       </list>
     </recent_temporary>
@@ -194,6 +219,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593381642892</updated>
+      <workItem from="1596414594664" duration="9082000" />
+      <workItem from="1596824378045" duration="521000" />
     </task>
     <task id="LOCAL-00001" summary="Added credential builder.">
       <created>1593643129481</created>
@@ -303,6 +330,22 @@
     <option name="localTasksCounter" value="16" />
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added credential builder." />
     <MESSAGE value="Added country metadata file" />
@@ -337,5 +380,11 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Intership2020$0_SignalDataLibrary.coverage" NAME="0_SignalDataLibrary Coverage Results" MODIFIED="1596416863880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SampleSignal" />
+    <SUITE FILE_PATH="coverage/Intership2020$1_ExampleCode.coverage" NAME="1_ExampleCode Coverage Results" MODIFIED="1596417188364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SampleSignal" />
+    <SUITE FILE_PATH="coverage/Intership2020$CountryMetaData.coverage" NAME="CountryMetaData Coverage Results" MODIFIED="1596416705238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BasicSetup" />
+    <SUITE FILE_PATH="coverage/Intership2020$Credentials.coverage" NAME="Credentials Coverage Results" MODIFIED="1596416280795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BasicSetup" />
   </component>
 </project>
