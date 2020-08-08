@@ -5,7 +5,6 @@ countryList = ['USA', 'AUS', 'JPN', 'CAN', 'CHE', 'GBR', 'ESP', 'FRA', 'ITA', 'D
 countries = CountryMetaDataFile().readMetadata().loc[countryList]
 start_date = '1980-01'
 
-
 ##Bespoke code name dictionaries
 MSCIEquityDictionary = {
                         'US':'MSUSAML',
@@ -37,6 +36,8 @@ fxNomPrices_TrdWts = dsPuller.ds_country_pull(lambda x: f'{x}CXTW..F', start_dat
 fxRealPrices_TrdWts = dsPuller.ds_country_pull(lambda x: f'{x}CXTR..F', start_date, '', 'M',['USA', 'AUS', 'JPN', 'CHE', 'GBR'])
 fxVsUSD = dsPuller.ds_country_pull(lambda x: f'{x}XRUSD.', start_date, '', 'M')
 coreCPI_SA = dsPuller.ds_country_pull(lambda x: f'{x}CCOR..E', start_date, '', 'M')
+bisRealBroadEffExchRateIndex = dsPuller.ds_country_pull(lambda x: f'{x}BISRXBR', start_date, '', 'M')
+bisNominalBroadEffExchRateIndex = dsPuller.ds_country_pull(lambda x: f'{x}BISNXBR', start_date, '', 'M')
 
 
 ##Write to library
@@ -56,6 +57,8 @@ dl.write_data("fxTrdWts/Nominal", fxNomPrices_TrdWts.to_timestamp())
 dl.write_data("fxTrdWts/Real", fxRealPrices_TrdWts.to_timestamp())
 dl.write_data("fxVsUSD", fxVsUSD.to_timestamp())
 dl.write_data("CoreCPI/SA", coreCPI_SA.to_timestamp())
+dl.write_data("bisRealBroadEffExchRateIndex", bisRealBroadEffExchRateIndex.to_timestamp())
+dl.write_data("bisNominalBroadEffExchRateIndex", bisNominalBroadEffExchRateIndex.to_timestamp())
 
 print("Success: Built Data Library")
 
