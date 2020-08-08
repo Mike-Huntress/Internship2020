@@ -6,6 +6,7 @@ countries = CountryMetaDataFile().readMetadata().loc[countryList]
 start_date = '1980-01'
 
 
+
 ##Bespoke code name dictionaries
 MSCIEquityDictionary = {
                         'US':'MSUSAML',
@@ -25,6 +26,7 @@ dsPuller = DatastreamPulls(countries)
 bondReturnIdx_locFX = dsPuller.ds_country_pull(lambda x: f'BM{x}10Y', start_date, 'RI', 'D')
 longRates = dsPuller.ds_country_pull(lambda x: f'TR{x}10T', start_date, 'RY', 'M')
 shortRates = dsPuller.ds_country_pull(lambda x: f'TR{x}2YT', start_date, 'RY', 'M')
+riskfreeRates = dsPuller.ds_country_pull(lambda x: f'TR{x}Z3M', start_date, '', 'M')
 equityPrices = dsPuller.ds_country_pull(lambda x: MSCIEquityDictionary[x], start_date, 'MSPI', 'D')
 M2_usd = dsPuller.ds_country_pull(lambda x: f'{x}CMS2..B', start_date, '', 'M',list(filter(lambda x: x !='AUS', countryList)))
 M1_usd = dsPuller.ds_country_pull(lambda x: f'{x}CMS1..B', start_date, '', 'M')
@@ -44,6 +46,7 @@ dl = DataLib("SignalData")
 dl.write_data("BondRetIdx/LocalFX",bondReturnIdx_locFX.to_timestamp())
 dl.write_data("LongRates",longRates.to_timestamp())
 dl.write_data("ShortRates", shortRates.to_timestamp())
+dl.write_data("RiskfreeRates", riskfreeRates.to_timestamp())
 dl.write_data("EquityPrices", equityPrices.to_timestamp())
 dl.write_data("M2/inUSD", M2_usd.to_timestamp())
 dl.write_data("M1/inUSD", M1_usd.to_timestamp())

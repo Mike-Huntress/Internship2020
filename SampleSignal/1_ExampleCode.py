@@ -12,13 +12,4 @@ LongRates_Change = LongRates.diff()
 #Difference between series
 ShortRates = dl.pull("ShortRates")
 LRMinusSR = LongRates - ShortRates
-print(LRMinusSR.head)
-
-
-
-
-
-
-
-
-
+print(LRMinusSR.head())
