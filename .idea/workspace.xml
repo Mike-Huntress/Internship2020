@@ -3,11 +3,39 @@
   <component name="AnalysisUIOptions">
     <option name="SCOPE_TYPE" value="3" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e5ca5f69-bd6d-4f20-9e01-c33817bcb1b3" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/Build Project Indicators-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/Data_Exploration-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/Python_Demo-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/ScratchPad-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SampleSignal/Build Project Indicators.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SampleSignal/Data_Exploration.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/BWInternship2020.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BWInternship2020.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicSetup/Credentials.py" beforeDir="false" afterPath="$PROJECT_DIR$/BasicSetup/Credentials.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleSignal/0_SignalDataLibrary.py" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/0_SignalDataLibrary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleSignal/Python_Demo.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/Python_Demo.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleSignal/ScratchPad.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/ScratchPad.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,18 +53,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="10" />
-    <option name="y" value="33" />
-    <option name="width" value="1438" />
-    <option name="height" value="794" />
-  </component>
+  <component name="ProjectId" id="1fZKlhIHcsb2J4CsdljNN2xIaJ1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.local/share/virtualenvs/BWInternship2020-qGgbmmCS/bin/python3.6" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SearchEverywhereHistoryKey" value="DataIO&#9;null&#9;null" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -45,7 +73,7 @@
       <recent name="$PROJECT_DIR$/BasicSetup" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.CountryMetaData">
+  <component name="RunManager" selected="Python.0_SignalDataLibrary">
     <configuration name="0_SignalDataLibrary" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="BWInternship2020" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -168,22 +196,23 @@
       <option name="ipnbPort" value="8889" />
     </configuration>
     <list>
-      <item itemvalue="Python.MetaDataFile" />
       <item itemvalue="Python.0_SignalDataLibrary" />
       <item itemvalue="Python.1_ExampleCode" />
       <item itemvalue="Python.CountryMetaData" />
       <item itemvalue="Python.Credentials" />
+      <item itemvalue="Python.MetaDataFile" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.CountryMetaData" />
-        <item itemvalue="Python.Credentials" />
         <item itemvalue="Python.0_SignalDataLibrary" />
+        <item itemvalue="Python.Credentials" />
+        <item itemvalue="Python.CountryMetaData" />
         <item itemvalue="Python.1_ExampleCode" />
         <item itemvalue="Python.MetaDataFile" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -303,6 +332,18 @@
     <option name="localTasksCounter" value="16" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added credential builder." />
     <MESSAGE value="Added country metadata file" />
@@ -316,6 +357,38 @@
     <option name="LAST_COMMIT_MESSAGE" value="Changed readme" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="390" y="146" key="FileChooserDialogImpl" timestamp="1596421041782">
+      <screen x="0" y="23" width="1280" height="732" />
+    </state>
+    <state x="390" y="146" key="FileChooserDialogImpl/0.23.1280.732@0.23.1280.732" timestamp="1596421041782" />
+    <state width="1239" height="170" key="GridCell.Tab.0.bottom" timestamp="1596466736154">
+      <screen x="0" y="23" width="1280" height="734" />
+    </state>
+    <state width="1239" height="170" key="GridCell.Tab.0.bottom/0.23.1280.732@0.23.1280.732" timestamp="1596421210803" />
+    <state width="1239" height="170" key="GridCell.Tab.0.bottom/0.23.1280.734@0.23.1280.734" timestamp="1596466736154" />
+    <state width="1239" height="170" key="GridCell.Tab.0.bottom/0.23.1280.735@0.23.1280.735" timestamp="1596424186903" />
+    <state width="1239" height="170" key="GridCell.Tab.0.center" timestamp="1596466736152">
+      <screen x="0" y="23" width="1280" height="734" />
+    </state>
+    <state width="1239" height="170" key="GridCell.Tab.0.center/0.23.1280.732@0.23.1280.732" timestamp="1596421210802" />
+    <state width="1239" height="170" key="GridCell.Tab.0.center/0.23.1280.734@0.23.1280.734" timestamp="1596466736152" />
+    <state width="1239" height="170" key="GridCell.Tab.0.center/0.23.1280.735@0.23.1280.735" timestamp="1596424186896" />
+    <state width="1239" height="170" key="GridCell.Tab.0.left" timestamp="1596466736150">
+      <screen x="0" y="23" width="1280" height="734" />
+    </state>
+    <state width="1239" height="170" key="GridCell.Tab.0.left/0.23.1280.732@0.23.1280.732" timestamp="1596421210802" />
+    <state width="1239" height="170" key="GridCell.Tab.0.left/0.23.1280.734@0.23.1280.734" timestamp="1596466736150" />
+    <state width="1239" height="170" key="GridCell.Tab.0.left/0.23.1280.735@0.23.1280.735" timestamp="1596424186895" />
+    <state width="1239" height="170" key="GridCell.Tab.0.right" timestamp="1596466736153">
+      <screen x="0" y="23" width="1280" height="734" />
+    </state>
+    <state width="1239" height="170" key="GridCell.Tab.0.right/0.23.1280.732@0.23.1280.732" timestamp="1596421210803" />
+    <state width="1239" height="170" key="GridCell.Tab.0.right/0.23.1280.734@0.23.1280.734" timestamp="1596466736153" />
+    <state width="1239" height="170" key="GridCell.Tab.0.right/0.23.1280.735@0.23.1280.735" timestamp="1596424186897" />
+    <state x="104" y="23" key="SettingsEditor" timestamp="1596421052755">
+      <screen x="0" y="23" width="1280" height="732" />
+    </state>
+    <state x="104" y="23" key="SettingsEditor/0.23.1280.732@0.23.1280.732" timestamp="1596421052755" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1595859594077">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
