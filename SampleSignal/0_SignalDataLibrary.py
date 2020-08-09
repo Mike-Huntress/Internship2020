@@ -1,3 +1,6 @@
+import sys
+sys.path.append('.')
+
 from BasicSetupUtilities.MetaDataBuilder import CountryMetaDataFile
 from DataIOUtilities.DataLib import DataLib, DatastreamPulls
 

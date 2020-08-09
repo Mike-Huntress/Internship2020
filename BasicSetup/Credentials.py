@@ -1,3 +1,6 @@
+import sys
+sys.path.append('.')
+
 from BasicSetupUtilities.CredentialsStoreBuilder import DataSourceCredentials
 
 
