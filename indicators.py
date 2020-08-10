@@ -164,7 +164,7 @@ def curr_acct_pct_gdp_indicator(curr_acct_pct_gdp: pd.DataFrame) -> pd.Series:
 
     curr_acct_1y = curr_acct_pct_gdp.diff(QUARTERS_PER_YEAR)
     curr_acct_4y = curr_acct_pct_gdp.diff(4 * QUARTERS_PER_YEAR)
-    curr_acct_1y_4y = curr_acct_1y - curr_acct_4y
+    curr_acct_1y_4y = curr_acct_4y - curr_acct_1y
 
     curr_acct_1y_4y_relative = relativize_to_avg(curr_acct_1y_4y)
     curr_acct_1y_4y_z = standardize(curr_acct_1y_4y_relative)
@@ -339,14 +339,17 @@ def test_indicator(
     # Convert to daily signal if the data is not daily
     if signals.index.freq in ['M', 'Q-DEC']:
 
+        # TODO: is this correct? I think the wrong frequencies might be used.
         # Since 'M' and 'Q-DEC' are timed at month or quarter *end*, we don't
         # have access to a month's number until the following month.
         # Thus, we shift down by 1 and forward fill, so each day of this 
         # month/quarter has last month's/quarter's values.
-        signals = signals.shift(1).resample('B').ffill()
+        # signals = signals.shift(1).resample('B').ffill()
+        signals = signals.resample('B').ffill()
 
     if indicators.index.freq in ['M', 'Q-DEC']:
-        indicators = indicators.shift(1).resample('B').ffill()
+        # indicators = indicators.shift(1).resample('B').ffill()
+        indicators = indicators.resample('B').ffill()
 
     return indicators, signals
     
