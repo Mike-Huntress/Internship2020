@@ -52,8 +52,12 @@ def get_all_data_and_labels(
         'm1_usd' + suffix,
         'm2_usd' + suffix,
         'm3_usd' + suffix,
-        # 'inflation_rate_annual'
     ]
+
+    if not cleaned:
+        all_labels.append('inflation_rate_annual')
+        all_labels.append('bond_premium')
+        all_labels.append('curve_height')
 
     prefix = 'Cleaned/' if cleaned else ''
     all_data = [
@@ -73,8 +77,12 @@ def get_all_data_and_labels(
         dl.pull(prefix + 'M1/inUSD'),
         dl.pull(prefix + 'M2/inUSD'),
         dl.pull(prefix + 'M3/inUSD'),
-        # dl.pull(prefix + 'inflationRate/Annual')
     ]
+
+    if not cleaned:
+        all_data.append(dl.pull('inflationRate/Annual'))
+        all_data.append(dl.pull('bondPremium'))
+        all_data.append(dl.pull('curveHeight'))
 
     return all_data, all_labels
 

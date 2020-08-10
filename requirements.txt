@@ -6,3 +6,4 @@ pyarrow>=0.17.1
 importlib-resources
 scipy>=1.5.2
 numpy>=1.19.1
+scikit-learn>=0.23.2
