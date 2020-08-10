@@ -3,11 +3,33 @@
   <component name="AnalysisUIOptions">
     <option name="SCOPE_TYPE" value="3" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e5ca5f69-bd6d-4f20-9e01-c33817bcb1b3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/FX indicator-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleSignal/FX indicator.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/Bond Premium Indicator-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/Bond Premium Indicator-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/Money Supply Indicator-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/Money Supply Indicator-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleSignal/0_SignalDataLibrary.py" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/0_SignalDataLibrary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleSignal/Bond Premium Indicator.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/Bond Premium Indicator.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleSignal/GDP indicator.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/GDP indicator.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleSignal/Money Supply Indicator.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/Money Supply Indicator.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +63,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/BasicSetupUtilities" />
       <recent name="$PROJECT_DIR$/SetupUtilities" />
       <recent name="$PROJECT_DIR$/BasicSetup" />
@@ -305,6 +328,17 @@
     <option name="localTasksCounter" value="16" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added credential builder." />
     <MESSAGE value="Added country metadata file" />
@@ -322,26 +356,26 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="260" y="349" key="FileChooserDialogImpl/0.23.1792.1097@0.23.1792.1097" timestamp="1596452982212" />
-    <state width="1771" height="303" key="GridCell.Tab.0.bottom" timestamp="1596713349420">
+    <state width="875" height="303" key="GridCell.Tab.0.bottom" timestamp="1597088065443">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1771" height="303" key="GridCell.Tab.0.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1596713349420" />
-    <state width="1771" height="303" key="GridCell.Tab.0.center" timestamp="1596713349419">
+    <state width="875" height="303" key="GridCell.Tab.0.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1597088065443" />
+    <state width="875" height="303" key="GridCell.Tab.0.center" timestamp="1597088065442">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1771" height="303" key="GridCell.Tab.0.center/0.23.1792.1097@0.23.1792.1097" timestamp="1596713349419" />
-    <state width="1771" height="303" key="GridCell.Tab.0.left" timestamp="1596713349418">
+    <state width="875" height="303" key="GridCell.Tab.0.center/0.23.1792.1097@0.23.1792.1097" timestamp="1597088065442" />
+    <state width="875" height="303" key="GridCell.Tab.0.left" timestamp="1597088065441">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1771" height="303" key="GridCell.Tab.0.left/0.23.1792.1097@0.23.1792.1097" timestamp="1596713349418" />
-    <state width="1771" height="303" key="GridCell.Tab.0.right" timestamp="1596713349419">
+    <state width="875" height="303" key="GridCell.Tab.0.left/0.23.1792.1097@0.23.1792.1097" timestamp="1597088065441" />
+    <state width="875" height="303" key="GridCell.Tab.0.right" timestamp="1597088065443">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1771" height="303" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1596713349419" />
-    <state x="0" y="210" width="900" height="722" key="SettingsEditor" timestamp="1596452992935">
+    <state width="875" height="303" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1597088065443" />
+    <state x="249" y="185" width="900" height="722" key="SettingsEditor" timestamp="1596898730175">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="0" y="210" width="900" height="722" key="SettingsEditor/0.23.1792.1097@0.23.1792.1097" timestamp="1596452992935" />
+    <state x="249" y="185" width="900" height="722" key="SettingsEditor/0.23.1792.1097@0.23.1792.1097" timestamp="1596898730175" />
     <state x="503" y="216" width="784" height="903" key="search.everywhere.popup" timestamp="1596452255803">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
