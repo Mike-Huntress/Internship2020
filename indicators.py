@@ -137,7 +137,7 @@ def monetary_base_indicator(m2_usd: pd.DataFrame) -> pd.Series:
 
     m2_pct_change_3m = m2_usd.pct_change(3)
     m2_pct_change_12m = m2_usd.pct_change(12)
-    m2_change_3m_12m = m2_pct_change_12m - m2_pct_change_3m
+    m2_change_3m_12m = m2_pct_change_12m / m2_pct_change_3m
     m2_change_3m_12m_relative = relativize_to_avg(m2_change_3m_12m)
     m2_change_3m_12m_z = standardize(m2_change_3m_12m_relative)
 
