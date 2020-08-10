@@ -41,7 +41,9 @@ def get_optimal_signal(bond_returns):
         return out
 
     optimal_signal = optimal_signal.apply(minmaxsig, axis=1)
-    optimal_signal = optimal_signal.drop(columns=optimal_signal.columns[-1])
+    optimal_signal = optimal_signal.drop(columns=[
+        el for el in optimal_signal.columns if not isinstance(el, str)
+    ])
     return optimal_signal
 
 
