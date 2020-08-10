@@ -34,22 +34,25 @@ def get_all_data_and_labels(
 
     dl = DataLib("SignalData")
 
+    suffix = '_clean' if cleaned else ''
     all_labels = [
-        'bond_rets_local_fx',
-        'equity_prices',
-        'curr_acct_nom_usd',
-        'curr_acct_pct_gdp',
-        'fx_trd_wts_nom',
-        'fx_trd_wts_real',
-        'fx_vs_usd',
-        'gdp_nom',
-        'gdp_real',
-        'short_rates',
-        'long_rates',
-        'core_cpi_sa',
-        'm1_usd',
-        'm2_usd',
-        'm3_usd'
+        'bond_rets_local_fx' + suffix,
+        'equity_prices' + suffix,
+        'curr_acct_nom_usd' + suffix,
+        'curr_acct_pct_gdp' + suffix,
+        'fx_trd_wts_nom' + suffix,
+        'fx_trd_wts_real' + suffix,
+        'fx_vs_usd' + suffix,
+        'fx_to_usd' + suffix,
+        'gdp_nom' + suffix,
+        'gdp_real' + suffix,
+        'short_rates' + suffix,
+        'long_rates' + suffix,
+        'core_cpi_sa' + suffix,
+        'm1_usd' + suffix,
+        'm2_usd' + suffix,
+        'm3_usd' + suffix,
+        # 'inflation_rate_annual'
     ]
 
     prefix = 'Cleaned/' if cleaned else ''
@@ -61,6 +64,7 @@ def get_all_data_and_labels(
         dl.pull(prefix + 'fxTrdWts/Nominal'),
         dl.pull(prefix + 'fxTrdWts/Real'),
         dl.pull(prefix + 'fxVsUSD'),
+        dl.pull(prefix + 'fxToUSD'),
         dl.pull(prefix + 'GDP/Nominal'),
         dl.pull(prefix + 'GDP/Real'),
         dl.pull(prefix + 'ShortRates'),
@@ -68,7 +72,8 @@ def get_all_data_and_labels(
         dl.pull(prefix + 'CoreCPI/SA'),
         dl.pull(prefix + 'M1/inUSD'),
         dl.pull(prefix + 'M2/inUSD'),
-        dl.pull(prefix + 'M3/inUSD')
+        dl.pull(prefix + 'M3/inUSD'),
+        # dl.pull(prefix + 'inflationRate/Annual')
     ]
 
     return all_data, all_labels
