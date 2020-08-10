@@ -12,6 +12,17 @@ def signalize(scores):
     return scores
 
 
+def get_momentum_signal(bond_returns, window=4):
+    """Return a DataFrame with a momentum signal.
+
+    momentum signal - i.e. do what worked before
+    """
+    momentum_signal = bond_returns.pct_change() + 1
+    momentum_signal = momentum_signal.rolling(window).apply(lambda x: x[:window - 1].mean())
+    momentum_signal = signalize(momentum_signal)
+    return momentum_signal
+
+
 def get_optimal_signal(bond_returns):
     """Return a DataFrame with an 'optimal' signal for a set of bonds.
 
