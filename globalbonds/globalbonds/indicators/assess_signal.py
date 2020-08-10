@@ -13,7 +13,7 @@ def predictive_accuracy(signal, objective, n=10):
     Y = objective.long_form().dropna().set_index(['date', 'country']).loc[X.index].dropna()
     X = X.loc[Y.index]
     confusion_matrix = pd.DataFrame({-1: {-1: 0, 1: 0}, 1: {-1: 0, 1: 0}})
-    for country in objective.columns:
+    for country in objective.data.columns:
         X_train, X_test = X.query('country != @country'), X.query('country == @country')
         Y_train, Y_test = Y.query('country != @country'), Y.query('country == @country')
         clf = RandomForestClassifier(n_estimators=n)
