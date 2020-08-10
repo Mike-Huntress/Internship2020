@@ -1,4 +1,9 @@
 
+import numpy as np
+from scipy.stats import gmean, entropy
+from numpy.linalg import norm
+
+
 def derivative(tbl, n=1, s=1):
     if n == 0:
         return tbl

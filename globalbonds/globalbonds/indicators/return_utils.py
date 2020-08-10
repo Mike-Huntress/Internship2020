@@ -44,6 +44,12 @@ def get_random_signal(bond_returns):
     return random_signal
 
 
+def get_risk_free_return(bond_returns):
+    risk_free_returns = bond_returns['USA'].pct_change() + 1
+    risk_free_returns = risk_free_returns.cumprod()
+    return risk_free_returns
+
+
 def calc_signal_returns(bond_returns, signal):
     """Return a Series of returns (as fraction of initial investment) for a signal."""
     signal = signal.copy().fillna(0)
