@@ -38,7 +38,7 @@ fxVsUSD = dsPuller.ds_country_pull(lambda x: f'{x}XRUSD.', start_date, '', 'M')
 coreCPI_SA = dsPuller.ds_country_pull(lambda x: f'{x}CCOR..E', start_date, '', 'M')
 bisRealBroadEffExchRateIndex = dsPuller.ds_country_pull(lambda x: f'{x}BISRXBR', start_date, '', 'M')
 bisNominalBroadEffExchRateIndex = dsPuller.ds_country_pull(lambda x: f'{x}BISNXBR', start_date, '', 'M')
-
+threeMonthRate = dsPuller.ds_country_pull(lambda x: f'{x}GBILL3', start_date, '', 'D',['USA'])
 
 ##Write to library
 dl = DataLib("SignalData")
@@ -59,6 +59,7 @@ dl.write_data("fxVsUSD", fxVsUSD.to_timestamp())
 dl.write_data("CoreCPI/SA", coreCPI_SA.to_timestamp())
 dl.write_data("bisRealBroadEffExchRateIndex", bisRealBroadEffExchRateIndex.to_timestamp())
 dl.write_data("bisNominalBroadEffExchRateIndex", bisNominalBroadEffExchRateIndex.to_timestamp())
+dl.write_data("threeMonthRate", threeMonthRate.to_timestamp())
 
 print("Success: Built Data Library")
 
