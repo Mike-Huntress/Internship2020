@@ -24,10 +24,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e5ca5f69-bd6d-4f20-9e01-c33817bcb1b3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/Bond Premium Indicator-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/Bond Premium Indicator-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/Money Supply Indicator-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/Money Supply Indicator-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleSignal/0_SignalDataLibrary.py" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/0_SignalDataLibrary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/Combining Indicators-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/Combining Indicators-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SampleSignal/Bond Premium Indicator.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/Bond Premium Indicator.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleSignal/Combining Indicators.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/Combining Indicators.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SampleSignal/GDP indicator.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/GDP indicator.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SampleSignal/Money Supply Indicator.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/Money Supply Indicator.ipynb" afterDir="false" />
     </list>
@@ -372,10 +371,10 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state width="875" height="303" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1597088065443" />
-    <state x="249" y="185" width="900" height="722" key="SettingsEditor" timestamp="1596898730175">
+    <state x="249" y="185" width="900" height="722" key="SettingsEditor" timestamp="1597144342477">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="249" y="185" width="900" height="722" key="SettingsEditor/0.23.1792.1097@0.23.1792.1097" timestamp="1596898730175" />
+    <state x="249" y="185" width="900" height="722" key="SettingsEditor/0.23.1792.1097@0.23.1792.1097" timestamp="1597144342477" />
     <state x="503" y="216" width="784" height="903" key="search.everywhere.popup" timestamp="1596452255803">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
