@@ -32,9 +32,9 @@ def scale_using_historical_rolling_max(centered, window=6, gap=1):
     return centered_scaled
 
 
-def center_scale_using_historical_rolling(tbl):
+def center_scale_using_historical_rolling(tbl, window=6, gap=1):
     """Return a centered and scaled DataFrame."""
-    centered = center_using_historical_rolling_mean(tbl)
-    centered_scaled = scale_using_historical_rolling_max(centered)
+    centered = center_using_historical_rolling_mean(tbl, window=window, gap=gap)
+    centered_scaled = scale_using_historical_rolling_max(centered, window=window, gap=gap)
     centered_scaled_timed = centered_scaled.resample('M').mean()
     return centered_scaled_timed

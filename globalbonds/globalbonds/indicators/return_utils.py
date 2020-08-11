@@ -63,6 +63,15 @@ def get_risk_free_return(bond_returns):
     return risk_free_returns
 
 
+def get_cash_rate(data_lib, time='M'):
+    exp = 4 if time == 'Q' else 12
+    cash_rate = data_lib.pull('RiskFree-Rate')['USA']  # Pull Ticker USGBILL3
+    cash_rate = cash_rate / 100  # convert cash rate into fraction
+    cash_rate = cash_rate.map(lambda r: (1 + r) ** (1 / exp) - 1)  # convert annualized rate
+    cash_rate = cash_rate.resample(time).apply(lambda x: x[0])  # get rate at start of each month
+    return cash_rate
+
+
 def calc_signal_returns(bond_returns, signal):
     """Return a Series of returns (as fraction of initial investment) for a signal."""
     signal = signal.copy().fillna(0)
@@ -72,5 +81,19 @@ def calc_signal_returns(bond_returns, signal):
 
     signal_returns = bond_returns * signal
     signal_returns = (signal_returns.sum(axis=1) + 1)
+    signal_returns = signal_returns.cumprod()
+    return signal_returns
+
+
+def calc_signal_risk_adj_returns(bond_returns, cash_rate, signal):
+    """Return a Series of returns (as fraction of initial investment) for a signal."""
+    signal = signal.copy().fillna(0)
+    bond_returns = bond_returns.pct_change()
+    bond_returns = bond_returns.fillna(0)
+    bond_returns += 1
+
+    signal_returns = bond_returns * signal
+    signal_returns = signal_returns.sum(axis=1) + 1
+    signal_returns /= (1 + cash_rate)
     signal_returns = signal_returns.cumprod()
     return signal_returns
