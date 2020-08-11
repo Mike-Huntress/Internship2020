@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5ca5f69-bd6d-4f20-9e01-c33817bcb1b3" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/BWInternship2020.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BWInternship2020.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleSignal/Python_Demo.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/Python_Demo.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/Official Project-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/Official Project-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleSignal/Official Project.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/Official Project.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -316,6 +319,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Changed readme" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="164" y="32" key="SettingsEditor" timestamp="1597028770083">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="164" y="32" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1597028770083" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1595859594077">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
