@@ -24,6 +24,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e5ca5f69-bd6d-4f20-9e01-c33817bcb1b3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleSignal/0_SignalDataLibrary.py" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/0_SignalDataLibrary.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SampleSignal/Build Project Indicators.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/Build Project Indicators.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -350,28 +351,28 @@
       <screen x="0" y="23" width="1280" height="732" />
     </state>
     <state x="390" y="146" key="FileChooserDialogImpl/0.23.1280.732@0.23.1280.732" timestamp="1596421041782" />
-    <state width="1239" height="170" key="GridCell.Tab.0.bottom" timestamp="1596466736154">
-      <screen x="0" y="23" width="1280" height="734" />
+    <state width="1239" height="170" key="GridCell.Tab.0.bottom" timestamp="1597087387922">
+      <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="1239" height="170" key="GridCell.Tab.0.bottom/0.23.1280.732@0.23.1280.732" timestamp="1596421210803" />
+    <state width="1239" height="170" key="GridCell.Tab.0.bottom/0.23.1280.732@0.23.1280.732" timestamp="1597087387922" />
     <state width="1239" height="170" key="GridCell.Tab.0.bottom/0.23.1280.734@0.23.1280.734" timestamp="1596466736154" />
     <state width="1239" height="170" key="GridCell.Tab.0.bottom/0.23.1280.735@0.23.1280.735" timestamp="1596424186903" />
-    <state width="1239" height="170" key="GridCell.Tab.0.center" timestamp="1596466736152">
-      <screen x="0" y="23" width="1280" height="734" />
+    <state width="1239" height="170" key="GridCell.Tab.0.center" timestamp="1597087387921">
+      <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="1239" height="170" key="GridCell.Tab.0.center/0.23.1280.732@0.23.1280.732" timestamp="1596421210802" />
+    <state width="1239" height="170" key="GridCell.Tab.0.center/0.23.1280.732@0.23.1280.732" timestamp="1597087387921" />
     <state width="1239" height="170" key="GridCell.Tab.0.center/0.23.1280.734@0.23.1280.734" timestamp="1596466736152" />
     <state width="1239" height="170" key="GridCell.Tab.0.center/0.23.1280.735@0.23.1280.735" timestamp="1596424186896" />
-    <state width="1239" height="170" key="GridCell.Tab.0.left" timestamp="1596466736150">
-      <screen x="0" y="23" width="1280" height="734" />
+    <state width="1239" height="170" key="GridCell.Tab.0.left" timestamp="1597087387920">
+      <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="1239" height="170" key="GridCell.Tab.0.left/0.23.1280.732@0.23.1280.732" timestamp="1596421210802" />
+    <state width="1239" height="170" key="GridCell.Tab.0.left/0.23.1280.732@0.23.1280.732" timestamp="1597087387920" />
     <state width="1239" height="170" key="GridCell.Tab.0.left/0.23.1280.734@0.23.1280.734" timestamp="1596466736150" />
     <state width="1239" height="170" key="GridCell.Tab.0.left/0.23.1280.735@0.23.1280.735" timestamp="1596424186895" />
-    <state width="1239" height="170" key="GridCell.Tab.0.right" timestamp="1596466736153">
-      <screen x="0" y="23" width="1280" height="734" />
+    <state width="1239" height="170" key="GridCell.Tab.0.right" timestamp="1597087387921">
+      <screen x="0" y="23" width="1280" height="732" />
     </state>
-    <state width="1239" height="170" key="GridCell.Tab.0.right/0.23.1280.732@0.23.1280.732" timestamp="1596421210803" />
+    <state width="1239" height="170" key="GridCell.Tab.0.right/0.23.1280.732@0.23.1280.732" timestamp="1597087387921" />
     <state width="1239" height="170" key="GridCell.Tab.0.right/0.23.1280.734@0.23.1280.734" timestamp="1596466736153" />
     <state width="1239" height="170" key="GridCell.Tab.0.right/0.23.1280.735@0.23.1280.735" timestamp="1596424186897" />
     <state x="104" y="23" key="SettingsEditor" timestamp="1596421052755">

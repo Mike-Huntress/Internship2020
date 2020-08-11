@@ -37,6 +37,7 @@ fxNomPrices_TrdWts = dsPuller.ds_country_pull(lambda x: f'{x}CXTW..F', start_dat
 fxRealPrices_TrdWts = dsPuller.ds_country_pull(lambda x: f'{x}CXTR..F', start_date, '', 'M',['USA', 'AUS', 'JPN', 'CHE', 'GBR'])
 fxVsUSD = dsPuller.ds_country_pull(lambda x: f'{x}XRUSD.', start_date, '', 'M')
 coreCPI_SA = dsPuller.ds_country_pull(lambda x: f'{x}CCOR..E', start_date, '', 'M')
+rfRates = dsPuller.ds_country_pull(lambda x: f'{x}GBILL3', start_date, '', 'M', list(filter(lambda x: x =='USA', countryList)))
 
 
 ##Write to library
@@ -56,5 +57,5 @@ dl.write_data("fxTrdWts/Nominal", fxNomPrices_TrdWts.to_timestamp())
 dl.write_data("fxTrdWts/Real", fxRealPrices_TrdWts.to_timestamp())
 dl.write_data("fxVsUSD", fxVsUSD.to_timestamp())
 dl.write_data("CoreCPI/SA", coreCPI_SA.to_timestamp())
-
+dl.write_data("RFrates", rfRates.to_timestamp())
 print("Success: Built Data Library")
