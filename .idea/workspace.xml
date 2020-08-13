@@ -192,11 +192,11 @@
       <option name="ipnbPort" value="8889" />
     </configuration>
     <list>
-      <item itemvalue="Python.MetaDataFile" />
       <item itemvalue="Python.0_SignalDataLibrary" />
       <item itemvalue="Python.1_ExampleCode" />
       <item itemvalue="Python.CountryMetaData" />
       <item itemvalue="Python.Credentials" />
+      <item itemvalue="Python.MetaDataFile" />
     </list>
     <recent_temporary>
       <list>
@@ -356,22 +356,22 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="260" y="349" key="FileChooserDialogImpl/0.23.1792.1097@0.23.1792.1097" timestamp="1596452982212" />
-    <state width="875" height="303" key="GridCell.Tab.0.bottom" timestamp="1597088065443">
+    <state width="875" height="303" key="GridCell.Tab.0.bottom" timestamp="1597278763252">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="875" height="303" key="GridCell.Tab.0.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1597088065443" />
-    <state width="875" height="303" key="GridCell.Tab.0.center" timestamp="1597088065442">
+    <state width="875" height="303" key="GridCell.Tab.0.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1597278763252" />
+    <state width="875" height="303" key="GridCell.Tab.0.center" timestamp="1597278763250">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="875" height="303" key="GridCell.Tab.0.center/0.23.1792.1097@0.23.1792.1097" timestamp="1597088065442" />
-    <state width="875" height="303" key="GridCell.Tab.0.left" timestamp="1597088065441">
+    <state width="875" height="303" key="GridCell.Tab.0.center/0.23.1792.1097@0.23.1792.1097" timestamp="1597278763250" />
+    <state width="875" height="303" key="GridCell.Tab.0.left" timestamp="1597278763249">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="875" height="303" key="GridCell.Tab.0.left/0.23.1792.1097@0.23.1792.1097" timestamp="1597088065441" />
-    <state width="875" height="303" key="GridCell.Tab.0.right" timestamp="1597088065443">
+    <state width="875" height="303" key="GridCell.Tab.0.left/0.23.1792.1097@0.23.1792.1097" timestamp="1597278763249" />
+    <state width="875" height="303" key="GridCell.Tab.0.right" timestamp="1597278763251">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="875" height="303" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1597088065443" />
+    <state width="875" height="303" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1597278763251" />
     <state x="249" y="185" width="900" height="722" key="SettingsEditor" timestamp="1597144342477">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
