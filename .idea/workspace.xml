@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5ca5f69-bd6d-4f20-9e01-c33817bcb1b3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jupyter_notebooks/Indicators_Signal_Testing.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/jupyter_notebooks/Indicators_Signal_Testing.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -218,6 +218,7 @@
       <workItem from="1596921460157" duration="5139000" />
       <workItem from="1596952872396" duration="17461000" />
       <workItem from="1597348605840" duration="914000" />
+      <workItem from="1597350297866" duration="582000" />
     </task>
     <task id="LOCAL-00001" summary="Added credential builder.">
       <created>1593643129481</created>
