@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5ca5f69-bd6d-4f20-9e01-c33817bcb1b3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/BWInternship2020.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BWInternship2020.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SampleSignal/Dry_run_presentation.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SampleSignal/generate_indicators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SampleSignal/utilityfunctions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nicks_readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleSignal/DataBrowser.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/DataBrowser.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/Data_cleaning-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/Data_cleaning-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/Python_Demo-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/Python_Demo-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleSignal/Data_cleaning.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/Data_cleaning.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SampleSignal/Python_Demo.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/Python_Demo.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,6 +36,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="DataIO&#9;null&#9;null" />
+    <property name="ignore.virus.scanning.warn.message" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
