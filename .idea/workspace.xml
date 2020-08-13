@@ -31,8 +31,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e5ca5f69-bd6d-4f20-9e01-c33817bcb1b3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/IndicatorConstruction-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/IndicatorConstruction-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleSignal/IndicatorConstruction.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/IndicatorConstruction.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/FINAL-Indicators_Signal_PresentationPlots-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/FINAL-Indicators_Signal_PresentationPlots-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleSignal/FINAL-Indicators_Signal_PresentationPlots.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/FINAL-Indicators_Signal_PresentationPlots.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -366,6 +366,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Changed readme" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="693" y="348" key="#Notifications" timestamp="1597348997210">
+      <screen x="0" y="23" width="1680" height="988" />
+    </state>
+    <state x="693" y="348" key="#Notifications/1680.-491.1080.1897/0.23.1680.988@0.23.1680.988" timestamp="1597348997210" />
     <state x="2428" y="313" key="FileChooserDialogImpl" timestamp="1596421041875">
       <screen x="1680" y="23" width="1920" height="1057" />
     </state>
