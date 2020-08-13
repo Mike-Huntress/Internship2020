@@ -23,7 +23,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5ca5f69-bd6d-4f20-9e01-c33817bcb1b3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/SampleSignal/HeatMap.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/Official Project-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/Official Project-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SampleSignal/Official Project.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/Official Project.ipynb" afterDir="false" />
