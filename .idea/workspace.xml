@@ -3,15 +3,36 @@
   <component name="AnalysisUIOptions">
     <option name="SCOPE_TYPE" value="3" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/bondSignal_Beni.Shafer-Sull" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e5ca5f69-bd6d-4f20-9e01-c33817bcb1b3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/BWInternship2020.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BWInternship2020.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicSetup/Credentials.py" beforeDir="false" afterPath="$PROJECT_DIR$/BasicSetup/Credentials.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleSignal/0_SignalDataLibrary.py" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/0_SignalDataLibrary.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleSignal/DataBrowser.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/DataBrowser.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleSignal/Python_Demo.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/Python_Demo.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/IndicatorConstruction-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/IndicatorConstruction-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleSignal/IndicatorConstruction.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/IndicatorConstruction.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -330,6 +351,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added credential builder." />
@@ -348,29 +370,33 @@
       <screen x="1680" y="23" width="1920" height="1057" />
     </state>
     <state x="2428" y="313" key="FileChooserDialogImpl/1680.23.1920.1057/0.23.1680.988@1680.23.1920.1057" timestamp="1596421041875" />
-    <state width="769" height="289" key="GridCell.Tab.0.bottom" timestamp="1596855846589">
-      <screen x="1680" y="-491" width="1080" height="1864" />
+    <state width="1237" height="289" key="GridCell.Tab.0.bottom" timestamp="1597120415028">
+      <screen x="0" y="23" width="1680" height="988" />
     </state>
+    <state width="1237" height="289" key="GridCell.Tab.0.bottom/0.23.1680.988@0.23.1680.988" timestamp="1597120415028" />
     <state width="769" height="289" key="GridCell.Tab.0.bottom/1680.-491.1080.1864/0.23.1680.1027@1680.-491.1080.1864" timestamp="1596855846588" />
-    <state width="1237" height="289" key="GridCell.Tab.0.bottom/1680.-491.1080.1897/0.23.1680.988@0.23.1680.988" timestamp="1596840310192" />
+    <state width="1237" height="289" key="GridCell.Tab.0.bottom/1680.-491.1080.1897/0.23.1680.988@0.23.1680.988" timestamp="1597103272108" />
     <state width="1899" height="300" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.988@1680.23.1920.1057" timestamp="1596582511421" />
-    <state width="769" height="289" key="GridCell.Tab.0.center" timestamp="1596855846587">
-      <screen x="1680" y="-491" width="1080" height="1864" />
+    <state width="1237" height="289" key="GridCell.Tab.0.center" timestamp="1597120415028">
+      <screen x="0" y="23" width="1680" height="988" />
     </state>
+    <state width="1237" height="289" key="GridCell.Tab.0.center/0.23.1680.988@0.23.1680.988" timestamp="1597120415028" />
     <state width="769" height="289" key="GridCell.Tab.0.center/1680.-491.1080.1864/0.23.1680.1027@1680.-491.1080.1864" timestamp="1596855846587" />
-    <state width="1237" height="289" key="GridCell.Tab.0.center/1680.-491.1080.1897/0.23.1680.988@0.23.1680.988" timestamp="1596840310191" />
+    <state width="1237" height="289" key="GridCell.Tab.0.center/1680.-491.1080.1897/0.23.1680.988@0.23.1680.988" timestamp="1597103272100" />
     <state width="1899" height="300" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.988@1680.23.1920.1057" timestamp="1596582511420" />
-    <state width="769" height="289" key="GridCell.Tab.0.left" timestamp="1596855846586">
-      <screen x="1680" y="-491" width="1080" height="1864" />
+    <state width="1237" height="289" key="GridCell.Tab.0.left" timestamp="1597120415024">
+      <screen x="0" y="23" width="1680" height="988" />
     </state>
+    <state width="1237" height="289" key="GridCell.Tab.0.left/0.23.1680.988@0.23.1680.988" timestamp="1597120415024" />
     <state width="769" height="289" key="GridCell.Tab.0.left/1680.-491.1080.1864/0.23.1680.1027@1680.-491.1080.1864" timestamp="1596855846586" />
-    <state width="1237" height="289" key="GridCell.Tab.0.left/1680.-491.1080.1897/0.23.1680.988@0.23.1680.988" timestamp="1596840310190" />
+    <state width="1237" height="289" key="GridCell.Tab.0.left/1680.-491.1080.1897/0.23.1680.988@0.23.1680.988" timestamp="1597103272090" />
     <state width="1899" height="300" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.988@1680.23.1920.1057" timestamp="1596582511419" />
-    <state width="769" height="289" key="GridCell.Tab.0.right" timestamp="1596855846588">
-      <screen x="1680" y="-491" width="1080" height="1864" />
+    <state width="1237" height="289" key="GridCell.Tab.0.right" timestamp="1597120415028">
+      <screen x="0" y="23" width="1680" height="988" />
     </state>
+    <state width="1237" height="289" key="GridCell.Tab.0.right/0.23.1680.988@0.23.1680.988" timestamp="1597120415028" />
     <state width="769" height="289" key="GridCell.Tab.0.right/1680.-491.1080.1864/0.23.1680.1027@1680.-491.1080.1864" timestamp="1596855846588" />
-    <state width="1237" height="289" key="GridCell.Tab.0.right/1680.-491.1080.1897/0.23.1680.988@0.23.1680.988" timestamp="1596840310191" />
+    <state width="1237" height="289" key="GridCell.Tab.0.right/1680.-491.1080.1897/0.23.1680.988@0.23.1680.988" timestamp="1597103272104" />
     <state width="1899" height="300" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.988@1680.23.1920.1057" timestamp="1596582511420" />
     <state x="2149" y="190" key="SettingsEditor" timestamp="1596421067910">
       <screen x="1680" y="23" width="1920" height="1057" />
