@@ -22,7 +22,8 @@ from utils import *
 
 def fx_appreciation_indicator(
     fx_to_usd: pd.DataFrame,
-    window: int = 6
+    window: int = 6,
+    std_window: Optional[int] = None
 ) -> pd.Series:
     """
     Computes the FX appreciation indicator, a percent change in each country's
@@ -32,6 +33,8 @@ def fx_appreciation_indicator(
         fx_to_usd: A DataFrame containing each country's currency to USD 
             exchange rate (only changes need to matter).
         window: The number of months over which to take the change.
+        std_window: The window over which to standardize the indicator. If None,
+            uses all historical data available at the time.
 
     Returns:
         Today's indicator values.
@@ -40,7 +43,8 @@ def fx_appreciation_indicator(
     
     fx_apprec_win = fx_to_usd.pct_change(window)
     fx_apprec_win_relative = relativize_to_avg(fx_apprec_win)
-    fx_apprec_win_z = standardize(fx_apprec_win_relative)
+    fx_apprec_win_z = standardize(fx_apprec_win_relative,
+                                  window=std_window)
 
     indicator = fx_apprec_win_z.iloc[-1].fillna(0)
     return indicator
@@ -48,7 +52,9 @@ def fx_appreciation_indicator(
 
 def bond_premium_and_curve_height_indicator(
     long_rates: pd.DataFrame,
-    short_rates: pd.DataFrame
+    short_rates: pd.DataFrame,
+    std_window_premium: Optional[int] = None,
+    std_window_height: Optional[int] = None
 ) -> pd.Series:
     """
     Computes the bond premium and curve height indicator.
@@ -56,22 +62,34 @@ def bond_premium_and_curve_height_indicator(
     Args:
         long_rates: A DataFrame containing each country's long rates.
         short_rates: A DataFrame containing each country's short rates.
+        std_window_premium: The window over which to standardize the indicator.
+            If None, uses all historical data available at the time.
+        std_window_height: The window over which to standardize the indicator.
+            If None, uses all historical data available at the time.
 
     Returns:
         Today's indicator values.
     
     """
 
-    bond_premium_indic = bond_premium_indicator(long_rates, short_rates)
-    curve_height_indic = curve_height_indicator(long_rates, short_rates)
-    
-    indicator = -curve_height_indic * bond_premium_indic
+    bond_premium_indic = bond_premium_indicator(long_rates, short_rates,
+                                                std_window=std_window_premium)
+    curve_height_indic = curve_height_indicator(long_rates, short_rates,
+                                                std_window=std_window_height)
+    indicator = bond_premium_indic.copy()
+    indicator[(curve_height_indic > 0) & (bond_premium_indic > 0)] = (
+        curve_height_indic + bond_premium_indic
+    )
+    indicator[(curve_height_indic > 0) & (bond_premium_indic < 0)] = (
+        curve_height_indic
+    )
     return indicator
 
 
 def bond_premium_indicator(
     long_rates: pd.DataFrame,
-    short_rates: pd.DataFrame
+    short_rates: pd.DataFrame,
+    std_window: Optional[int] = None
 ) -> pd.Series:
     """
     Computes the bond premium indicator, the long rates minus the short rates 
@@ -80,6 +98,8 @@ def bond_premium_indicator(
     Args:
         long_rates: A DataFrame containing each country's long rates.
         short_rates: A DataFrame containing each country's short rates.
+        std_window: The window over which to standardize the indicator. If None,
+            uses all historical data available at the time.
 
     Returns:
         Today's indicator values.
@@ -88,7 +108,8 @@ def bond_premium_indicator(
 
     bond_premium = long_rates - short_rates
     bond_premium_relative = relativize_to_avg(bond_premium)
-    bond_premium_z = standardize(bond_premium_relative)
+    bond_premium_z = standardize(bond_premium_relative,
+                                 window=std_window)
 
     indicator = bond_premium_z.iloc[-1].fillna(0)
     return indicator
@@ -96,7 +117,8 @@ def bond_premium_indicator(
 
 def curve_height_indicator(
     long_rates: pd.DataFrame,
-    short_rates: pd.DataFrame
+    short_rates: pd.DataFrame,
+    std_window: Optional[int] = None
 ) -> pd.Series:
     """
     Computes the curve height indicator, the average of the long and short 
@@ -105,6 +127,8 @@ def curve_height_indicator(
     Args:
         long_rates: A DataFrame containing each country's long rates.
         short_rates: A DataFrame containing each country's short rates.
+        std_window: The window over which to standardize the indicator. If None,
+            uses all historical data available at the time.
 
     Returns:
         Today's indicator values.
@@ -113,19 +137,25 @@ def curve_height_indicator(
 
     curve_height = (long_rates + short_rates) / 2
     curve_height_relative = relativize_to_avg(curve_height)
-    curve_height_z = standardize(curve_height_relative)
+    curve_height_z = standardize(curve_height_relative,
+                                 window=std_window)
 
     indicator = curve_height_z.iloc[-1].fillna(0)
     return indicator
 
 
-def monetary_base_indicator(m2_usd: pd.DataFrame) -> pd.Series:
+def monetary_base_indicator(
+    m2_usd: pd.DataFrame,
+    std_window: Optional[int] = None
+) -> pd.Series:
     """
     Computes the monetary base indicator, the difference between the 12-month
     change in M2 and the 3-month change in M2.
 
     Args:
         m2_usd: A DataFrame containing each country's M2 money supply in USD.
+        std_window: The window over which to standardize the indicator. If None,
+            uses all historical data available at the time.
 
     Returns:
         Today's indicator values.
@@ -137,15 +167,19 @@ def monetary_base_indicator(m2_usd: pd.DataFrame) -> pd.Series:
 
     m2_pct_change_3m = m2_usd.pct_change(3)
     m2_pct_change_12m = m2_usd.pct_change(12)
-    m2_change_3m_12m = m2_pct_change_12m / m2_pct_change_3m
+    m2_change_3m_12m = m2_pct_change_12m - m2_pct_change_3m
     m2_change_3m_12m_relative = relativize_to_avg(m2_change_3m_12m)
-    m2_change_3m_12m_z = standardize(m2_change_3m_12m_relative)
+    m2_change_3m_12m_z = standardize(m2_change_3m_12m_relative,
+                                     window=std_window)
 
     indicator = m2_change_3m_12m_z.iloc[-1].fillna(0)
     return indicator
 
 
-def curr_acct_pct_gdp_indicator(curr_acct_pct_gdp: pd.DataFrame) -> pd.Series:
+def curr_acct_pct_gdp_indicator(
+    curr_acct_pct_gdp: pd.DataFrame,
+    std_window: Optional[int] = None
+) -> pd.Series:
     """
     Computes the current account / GDP indicator, the difference between the 
     1-year and 4-year change in current account / GDP.
@@ -153,6 +187,8 @@ def curr_acct_pct_gdp_indicator(curr_acct_pct_gdp: pd.DataFrame) -> pd.Series:
     Args:
         curr_acct_pct_gdp: A DataFrame containing each country's current 
             account balance as a percentage of GDP.
+            std_window: The window over which to standardize the indicator. If None,
+            uses all historical data available at the time.
 
     Returns:
         Today's indicator values.
@@ -167,7 +203,8 @@ def curr_acct_pct_gdp_indicator(curr_acct_pct_gdp: pd.DataFrame) -> pd.Series:
     curr_acct_1y_4y = curr_acct_4y - curr_acct_1y
 
     curr_acct_1y_4y_relative = relativize_to_avg(curr_acct_1y_4y)
-    curr_acct_1y_4y_z = standardize(curr_acct_1y_4y_relative)
+    curr_acct_1y_4y_z = standardize(curr_acct_1y_4y_relative,
+                                    window=std_window)
 
     indicator = curr_acct_1y_4y_z.iloc[-1].fillna(0)
     return indicator
@@ -175,7 +212,8 @@ def curr_acct_pct_gdp_indicator(curr_acct_pct_gdp: pd.DataFrame) -> pd.Series:
 
 def stock_bond_performance_indicator(
     stock_prices: pd.DataFrame,
-    bond_prices: pd.DataFrame
+    bond_prices: pd.DataFrame,
+    std_window: Optional[int] = None
 ) -> pd.Series:
     """
     Computes the relative stock/bond performance indicator, the difference
@@ -184,6 +222,8 @@ def stock_bond_performance_indicator(
     Args:
         stock_prices: A DataFrame containing each country's stock prices.
         bond_prices: A DataFrame containing each country's bond prices.
+        std_window: The window over which to standardize the indicator. If None,
+            uses all historical data available at the time.
 
     Returns:
         Today's indicator values.
@@ -192,17 +232,19 @@ def stock_bond_performance_indicator(
 
     stock_rets_1y = stock_prices.pct_change(WEEKDAYS_PER_YEAR)
     bond_rets_1y = bond_prices.pct_change(WEEKDAYS_PER_YEAR)
-    bond_stock_spread = bond_rets_1y - stock_rets_1y
+    stock_bond_spread = stock_rets_1y - bond_rets_1y
 
-    bond_stock_spread_relative = relativize_to_avg(bond_stock_spread)
-    bond_stock_spread_z = standardize(bond_stock_spread_relative)
+    stock_bond_spread_relative = relativize_to_avg(stock_bond_spread)
+    stock_bond_spread_z = standardize(stock_bond_spread_relative,
+                                      window=std_window)
 
-    indicator = -bond_stock_spread_z.iloc[-1].fillna(0)
+    indicator = stock_bond_spread_z.iloc[-1].fillna(0)
     return indicator
 
 
 def change_in_gdp_indicator(
-    gdp: pd.DataFrame
+    gdp: pd.DataFrame,
+    std_window: Optional[int] = None
 ) -> pd.Series:
     """
     Computes the change in GDP indicator, each country's quarter over quarter 
@@ -211,6 +253,8 @@ def change_in_gdp_indicator(
 
     Args:
         gdp: A DataFrame containing each country's GDP data.
+        std_window: The window over which to standardize the indicator. If None,
+            uses all historical data available at the time.
 
     Returns:
         Today's indicator values.
@@ -222,29 +266,37 @@ def change_in_gdp_indicator(
 
     gdp_change = gdp.pct_change().rolling(2).mean()
     gdp_change_relative = relativize_to_avg(gdp_change)
-    gdp_change_z = standardize(gdp_change_relative)
+    gdp_change_z = standardize(gdp_change_relative,
+                               window=std_window)
 
     indicator = gdp_change_z.iloc[-1].fillna(0)
     return indicator
 
 
-def indicator_to_trading_signal(indicator: pd.Series) -> pd.Series:
+def indicators_to_trading_signal(
+    indicators: List[pd.Series],
+    weights: Optional[List[float]] = None
+) -> pd.Series:
     """
     Converts indicator values for each country to a trading signal as a smooth
     function how of how unlikely it is to see those standard deviation values.
 
     Args:
         indicator: The indicator values for each country.
+        weights: The weight to apply to each indicator. If None, uniformly 
+            weighted.
 
     Returns:
         The trading signal, each number between -1 and 1.
 
     """
-    cdf_complement = 1 - 2 * norm.cdf(-np.abs(indicator))
-    signed_cdf_complement = np.sign(indicator) * cdf_complement
-    sigmoid_res = sigmoid(signed_cdf_complement, scale=4.5, deg=2) 
+    if weights is None:
+        weights = np.ones(len(indicators))
 
-    return sigmoid_res
+    indicator = sum([ind * weights[i] for i, ind in enumerate(indicators)])
+    cdf_complement = 1 - 2 * norm.cdf(-np.abs(indicator))
+    signed_cdf_complement = np.sign(indicator) * cdf_complement 
+    return np.clip(signed_cdf_complement * 1.1, -1, 1)
 
 
 def calculate_returns(
@@ -277,8 +329,11 @@ def calculate_returns(
     rets = signal * bond_rets.shift(-shift)
     
     if isinstance(signal, pd.DataFrame):
-        weighted_rets = rets * weights if weights else rets
-        overall_rets = weighted_rets.mean(axis=1)
+        if weights:
+            assert np.isclose(sum(weights), 1)
+            overall_rets = (rets * weights).sum(axis=1)
+        else:
+            overall_rets = rets.mean(axis=1)
         return (overall_rets, rets)
     else:
         return rets
@@ -290,7 +345,7 @@ def test_indicator(
     data: Tuple[pd.DataFrame, ...],
     args: Tuple[Any, ...] = None,
     kwargs: Dict[str, Any] = None
-):
+) -> Tuple[pd.DataFrame, pd.DataFrame]:
     """
     Tests an indicator by generating a sequence of indicator values and 
     trading signals through time.
@@ -328,7 +383,7 @@ def test_indicator(
         )
         indicators.append(indicator)
 
-        trading_signal = indicator_to_trading_signal(indicator)
+        trading_signal = indicators_to_trading_signal([indicator])
         assert (trading_signal <= 1).all() and (trading_signal >= -1).all()
 
         signals.append(trading_signal)
@@ -339,17 +394,14 @@ def test_indicator(
     # Convert to daily signal if the data is not daily
     if signals.index.freq in ['M', 'Q-DEC']:
 
-        # TODO: is this correct? I think the wrong frequencies might be used.
         # Since 'M' and 'Q-DEC' are timed at month or quarter *end*, we don't
         # have access to a month's number until the following month.
         # Thus, we shift down by 1 and forward fill, so each day of this 
         # month/quarter has last month's/quarter's values.
-        # signals = signals.shift(1).resample('B').ffill()
-        signals = signals.resample('B').ffill()
+        signals = signals.shift(1).resample('B').ffill()
 
     if indicators.index.freq in ['M', 'Q-DEC']:
-        # indicators = indicators.shift(1).resample('B').ffill()
-        indicators = indicators.resample('B').ffill()
+        indicators = indicators.shift(1).resample('B').ffill()
 
     return indicators, signals
-    
+

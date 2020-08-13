@@ -15,7 +15,17 @@ from typing import Tuple
 import pandas as pd
 
 
+# 253 trading days in the US market:
+#     365.25 (days on average per year)
+#   * 5/7 (proportion work days per week)
+#   - 6 (weekday holidays)
+#   - 3 * 5/7 (fixed date holidays)
+#   -------------------------------------
+#     252.75 ~> 253
+#
+# But empirically each year has ~261 datapoints (why is that?)
 WEEKDAYS_PER_YEAR = 261
+DAYS_PER_YEAR = 365
 MONTHS_PER_YEAR = 12
 QUARTERS_PER_YEAR = 4
 WEEKDAYS_PER_QUARTER = int(WEEKDAYS_PER_YEAR / QUARTERS_PER_YEAR)

@@ -58,6 +58,7 @@ def get_all_data_and_labels(
         all_labels.append('inflation_rate_annual')
         all_labels.append('bond_premium')
         all_labels.append('curve_height')
+        all_labels.append('risk_free_rate')
 
     prefix = 'Cleaned/' if cleaned else ''
     all_data = [
@@ -83,6 +84,7 @@ def get_all_data_and_labels(
         all_data.append(dl.pull('inflationRate/Annual'))
         all_data.append(dl.pull('bondPremium'))
         all_data.append(dl.pull('curveHeight'))
+        all_data.append(dl.pull('riskFreeRate')['US 3M T-Bill Yield'])
 
     return all_data, all_labels
 

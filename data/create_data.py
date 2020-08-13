@@ -3,16 +3,21 @@ File: create_data.py
 Author: Jeremy Ephron
 ---------------------
 This file implements the creation of data streams from the initial raw data 
-provided.
+provided or pulling new data streams.
 
 """
 
-from DataIOUtilities.DataLib import DataLib
+from BasicSetupUtilities.MetaDataBuilder import CountryMetaDataFile
+from DataIOUtilities.DataLib import DataLib, DatastreamPulls
+
+from data import COUNTRIES
+from utils import *
 
 
 def create_data() -> None:
     """
-    Creates several data streams through operations on existing data.
+    Creates several data streams through operations on existing data or 
+    pulling new data streams.
 
     """
 
@@ -44,6 +49,21 @@ def create_data() -> None:
     inflation_rate_annual = core_cpi_sa.pct_change(MONTHS_PER_YEAR)
 
     dl.write_data('inflationRate/Annual', inflation_rate_annual)
+
+    # Risk free rate
+    countries = CountryMetaDataFile().readMetadata().loc[COUNTRIES]
+    start_date = '1980-01'
+    dsPuller = DatastreamPulls(countries)
+    
+    # Using U.S. 3M T-Bills as risk free rate
+    risk_free_rate = dsPuller.ds_country_pull(
+        lambda x: f'{x}GBILL3', start_date, '', 'D', ['USA']
+    )
+    risk_free_rate['USA'] = risk_free_rate['USA'] / 100
+    risk_free_rate.rename(columns={'USA': 'US 3M T-Bill Yield'}, inplace=True)
+    risk_free_rate.rename_axis('', axis='columns', inplace=True)
+    
+    dl.write_data('riskFreeRate', risk_free_rate)
 
 
 if __name__ == '__main__':
