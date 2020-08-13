@@ -92,19 +92,6 @@ def get_returns_system(signal, weights):
     return portfolio_returns, long_returns
 
 
-def show_signals(signal, country=None):
-    country_string = ' '
-    if country is None:
-        country_string = ''
-    else:
-        country_string = country_string + country
-
-    plt.figure(figsize=(20, 5))
-    signal.plot()
-    plt.title('Signals Over Time' + country_string)
-    plt.show()
-
-
 def graph_returns(portfolio_returns, benchmark_returns):
     sum_portfolio_returns = portfolio_returns.cumsum()
     sum_benchmark_returns = benchmark_returns.cumsum()

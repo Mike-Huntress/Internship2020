@@ -5,21 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5ca5f69-bd6d-4f20-9e01-c33817bcb1b3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Project/indicator_values_plot.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/indicators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/main_multiple_countries.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/main_one_country.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/returns.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/signals.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jupyter_notebooks/Indicators_Signal_Testing.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/.ipynb_checkpoints/Indicators_Signal_Testing-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Project/.ipynb_checkpoints/Indicators_Signal_Testing-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Data exploration.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/jupyter_notebooks/Data exploration.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Indicators_Signal_Testing.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/generate_signal.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/ind_1_return_diff.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/test_returns.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/returns.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/returns.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/signals.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/signals.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -210,8 +198,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.indicator_values_plot" />
-        <item itemvalue="Python.main_multiple_countries" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.main_multiple_countries" />
         <item itemvalue="Python.1_ExampleCode" />
         <item itemvalue="Python.0_SignalDataLibrary" />
       </list>
@@ -231,6 +219,7 @@
       <workItem from="1596824378045" duration="856000" />
       <workItem from="1596921460157" duration="5139000" />
       <workItem from="1596952872396" duration="17461000" />
+      <workItem from="1597348605840" duration="826000" />
     </task>
     <task id="LOCAL-00001" summary="Added credential builder.">
       <created>1593643129481</created>
@@ -392,12 +381,12 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Intership2020$indicator_values_plot.coverage" NAME="indicator_values_plot Coverage Results" MODIFIED="1597348437186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Project" />
+    <SUITE FILE_PATH="coverage/Intership2020$indicator_values_plot.coverage" NAME="indicator_values_plot Coverage Results" MODIFIED="1597349483532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Project" />
     <SUITE FILE_PATH="coverage/Intership2020$0_SignalDataLibrary.coverage" NAME="0_SignalDataLibrary Coverage Results" MODIFIED="1596416863880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SampleSignal" />
     <SUITE FILE_PATH="coverage/Intership2020$1_ExampleCode.coverage" NAME="1_ExampleCode Coverage Results" MODIFIED="1596929858773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SampleSignal" />
-    <SUITE FILE_PATH="coverage/Intership2020$main.coverage" NAME="main Coverage Results" MODIFIED="1597347809595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Project" />
+    <SUITE FILE_PATH="coverage/Intership2020$main.coverage" NAME="main Coverage Results" MODIFIED="1597349201460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Project" />
     <SUITE FILE_PATH="coverage/Intership2020$CountryMetaData.coverage" NAME="CountryMetaData Coverage Results" MODIFIED="1596416705238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BasicSetup" />
     <SUITE FILE_PATH="coverage/Intership2020$Credentials.coverage" NAME="Credentials Coverage Results" MODIFIED="1596416280795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BasicSetup" />
-    <SUITE FILE_PATH="coverage/Intership2020$main_multiple_countries.coverage" NAME="main_multiple_countries Coverage Results" MODIFIED="1597348205841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Project" />
+    <SUITE FILE_PATH="coverage/Intership2020$main_multiple_countries.coverage" NAME="main_multiple_countries Coverage Results" MODIFIED="1597349003597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Project" />
   </component>
 </project>
