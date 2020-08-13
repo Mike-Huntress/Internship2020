@@ -24,16 +24,12 @@
   <component name="ChangeListManager">
     <list default="true" id="e5ca5f69-bd6d-4f20-9e01-c33817bcb1b3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/.ipynb_checkpoints/Bond Premium Indicator-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Build/.ipynb_checkpoints/Bond Premium Indicator-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/.ipynb_checkpoints/Curve Height Indicator-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Build/.ipynb_checkpoints/Curve Height Indicator-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/.ipynb_checkpoints/Combining Indicators-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Build/.ipynb_checkpoints/Combining Indicators-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Build/.ipynb_checkpoints/Dummy Returns Stream-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Build/.ipynb_checkpoints/Dummy Returns Stream-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/.ipynb_checkpoints/GDP indicator-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Build/.ipynb_checkpoints/GDP indicator-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/Bond Premium Indicator.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Build/Bond Premium Indicator.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/.ipynb_checkpoints/Equities Analysis-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Build/.ipynb_checkpoints/Equities Analysis-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Build/Combining Indicators.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Build/Combining Indicators.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/Curve Height Indicator.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Build/Curve Height Indicator.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Build/Dummy Returns Stream.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Build/Dummy Returns Stream.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/GDP indicator.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Build/GDP indicator.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/Investment System.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/Equities Analysis.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Build/Equities Analysis.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
