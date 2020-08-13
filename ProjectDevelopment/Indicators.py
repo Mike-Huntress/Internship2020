@@ -19,3 +19,9 @@ class BaseIndicator:
         rolling_mean = rolling.mean()
         rolling_std = rolling.std()
         return (data - rolling_mean) / rolling_std
+
+    def scale_position_range(self, positions):
+        #generate a signal that ranges from -1 to 1
+        min_val = positions.min()
+        max_val = positions.max()
+        return positions.apply(lambda x: (2 * (x - min_val) / (max_val - min_val)) - 1)
