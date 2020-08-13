@@ -296,7 +296,11 @@ def indicators_to_trading_signal(
     indicator = sum([ind * weights[i] for i, ind in enumerate(indicators)])
     cdf_complement = 1 - 2 * norm.cdf(-np.abs(indicator))
     signed_cdf_complement = np.sign(indicator) * cdf_complement 
-    return np.clip(signed_cdf_complement * 1.1, -1, 1)
+
+    # TODO: is this commented out step logical or helpful?
+    # return np.clip(signed_cdf_complement * 1.1, -1, 1)
+
+    return signed_cdf_complement
 
 
 def calculate_returns(
