@@ -38,8 +38,6 @@ dl = DataLib("SignalData")
 LongRates = dl.pull("LongRates")
 ShortRates = dl.pull("ShortRates")
 
-print(ShortRates.head())
-
 # Generate Curve Height as average of the two
 CurveHeight = (LongRates + ShortRates) / 2
 
@@ -47,13 +45,13 @@ CurveHeight = (LongRates + ShortRates) / 2
 RelativeCurveHeight = CurveHeight.sub(CurveHeight.mean(axis=1), axis=0)
 
 # Normalize
-RelativeCurveHeight_Normalized = Util.NormalizeDF(RelativeCurveHeight, 60)
+RelativeCurveHeight_Normalized = Util.NormalizeDF(RelativeCurveHeight, 120)
 
-RelativeCurveHeight_Normalized.plot()
-plt.xlabel('Date')
-plt.ylabel('RelativeCurveHeight')
-plt.title('RelativeCurveHeight By Country')
-plt.show(block=True)
+# RelativeCurveHeight_Normalized.plot()
+# plt.xlabel('Date')
+# plt.ylabel('RelativeCurveHeight')
+# plt.title('RelativeCurveHeight By Country')
+# plt.show(block=True)
 
 # TODO: do something to normalize by inflation expectations, currency hedging, because real returns matter?
 
@@ -81,15 +79,15 @@ all_countries = RelativeCurveHeight.columns
 # Intuition: When risk premium is higher, there is likely to be more demand for long-term bonds, increasing prices
 
 RiskPremium = LongRates - ShortRates
-# Normalize over past 10 years around RiskPremium = 0
-RiskPremium_Normalized = Util.NormalizeDF(RiskPremium, 120, center = 0)
+# Normalize over past 10 years
+RiskPremium_Normalized = Util.NormalizeDF(RiskPremium, 120)
 
-# Plot to see how this changes over time
-RiskPremium_Normalized.plot()
-plt.xlabel('Date')
-plt.ylabel('RiskPremium')
-plt.title('RiskPremium By Country (Normalized)')
-plt.show(block=True)
+# # Plot to see how this changes over time
+# RiskPremium_Normalized.plot()
+# plt.xlabel('Date')
+# plt.ylabel('RiskPremium')
+# plt.title('RiskPremium By Country (Normalized)')
+# plt.show(block=True)
 
 
 # # Test how well it predicts
@@ -173,39 +171,44 @@ DemandSignal3 = - EquityBondRelativeMontly_Normalized
 # Demand Signal 3 has somehwat positive returns
 # Demand Signal 1 does not do well, looks effectively like noise
 
-# Appears that good signal would be 2 (risk premium) + 3 (equity/bond)
-DemandSignal4 = (DemandSignal2 + DemandSignal3) / 2
+# Appears that good signal would be 2 (risk premium) + 3 (equity/bond), rescaled to be mean 0 std 1
+DemandSignal = (DemandSignal2 + DemandSignal3) * (2 ** .5) / 2
 
-i = 1
+# Rescale
+DemandSignalScaled = Util.RescaleDF(DemandSignal)
 
-for Signal in [DemandSignal1, DemandSignal2, DemandSignal3, DemandSignal4]:
-    # Assume invest at each month using signals at that point in time
-    BondPrices = dl.pull("BondRetIdx/LocalFX")
-    BondPrices_Monthly = BondPrices.resample('1M').first()
 
-    # Get Monthly returns, hedged from currency
+PL_Total = Util.PLTotal(DemandSignalScaled)
 
-    BondPrices = dl.pull("BondRetIdx/LocalFX")
-    FXvsUSD = dl.pull('fxVsUSD')
+if __name__ == '__main__':
+    for i in [DemandSignal1, DemandSignal2, DemandSignal3]:
+        # i.plot()
+        # plt.show()
+        print(i.mean().mean())
 
-    # Get daily return
-    BondReturn_Daily = BondPrices.pct_change(1).shift(-1)
+    print(DemandSignalScaled.mean().mean())
 
-    # Sum return over month
-    BondReturn_Monthly = BondReturn_Daily.resample('1M').sum()
+    PL_Total.plot(figsize=(8, 6))
+    plt.title("Excess P+L from Demand Signal (Hedged Against Currency)")
+    plt.xlabel("Date")
+    plt.ylabel("Cumulative P+L")
+    plt.xlim(left=12*30)
+    plt.savefig('demand_pl.png')
+    plt.show(block = False)
 
-    # Net out currency
-    fxVsUSD_Monthly = FXvsUSD.pct_change(1).shift(-1)
-    NetReturn = BondReturn_Monthly - fxVsUSD_Monthly
+    # Plot signal
+    DemandSignal.plot(figsize=(8, 6))
+    plt.title("Demand Signal")
+    plt.xlabel("Date")
+    plt.ylabel("Demand Signal")
+    plt.xlim(left=12*30)
+    plt.savefig('demand_signal.png')
+    plt.show(block = False)
 
-    # Calculate cumulative PL, assuming no investment
-    PL_Raw = NetReturn * Signal
-    PL_Total = PL_Raw.cumsum()
 
-    PL_Total.plot()
-
-    plt.title("PL from Demand Signal " + str(i))
-    plt.show()
-
-    i += 1
-
+# PL1, PL2 = Util.PLRaw(DemandSignal2), Util.PLRaw(DemandSignal3)
+# sum = 0
+# for country in PL1.columns:
+#     sum += PL1[country].corr(PL2[country])
+# average_corr = sum / len(PL1.columns)
+# print(average_corr)

@@ -15,15 +15,8 @@ from DataIOUtilities.DataLib import DataLib, DatastreamPulls
 import pandas as pd
 import numpy as np
 
-from mpl_toolkits.axes_grid1 import host_subplot
-import mpl_toolkits.axisartist as AA
 import matplotlib.pyplot as plt
-
-import statistics
-
-import importlib
 import Indicators.IndicatorUtilities as Util
-importlib.reload(Util)
 
 countries = CountryMetaDataFile().readMetadata()
 dl = DataLib("SignalData")
@@ -51,22 +44,29 @@ GDPReal_PctChange_Normalized_Monthly = GDPReal_PctChange_Normalized.resample('1M
 
 # GDP experiences
 
-GrowthSignal = GDPReal_PctChange_Normalized_Monthly
+GrowthSignal = -GDPReal_PctChange_Normalized_Monthly
+GrowthSignalScaled = Util.RescaleDF(GrowthSignal)
 
-BondPrices = dl.pull("BondRetIdx/LocalFX")
-FXvsUSD = dl.pull('fxVsUSD')
+# GrowthSignalScaled.plot()
+# plt.show()
 
-BondReturn_Daily = BondPrices.pct_change(1).shift(-1)
-BondReturn_Monthly = BondReturn_Daily.resample('1M').sum()
-fxVsUSD_Monthly = FXvsUSD.pct_change(1).shift(-1)
-print(fxVsUSD_Monthly.tail())
-print(BondReturn_Monthly.tail())
+PL_Total = Util.PLTotal(GrowthSignalScaled)
 
-NetReturn = BondReturn_Monthly - fxVsUSD_Monthly
+if __name__ == '__main__':
 
-PL_Raw = NetReturn * ( - GrowthSignal)
-PL_Total = PL_Raw.cumsum()
+    PL_Total.plot(figsize=(8, 6))
+    plt.title("Excess P+L from Growth Signal (Hedged Against Currency)")
+    plt.xlabel("Date")
+    plt.ylabel("Cumulative P+L")
+    plt.xlim(left=12*19)
+    plt.savefig('growth_pl.png')
+    plt.show(block = False)
 
-PL_Total.plot()
-plt.title("PL from Growth Signal")
-plt.show()
+    # Plot signal
+    GrowthSignal.plot(figsize=(8, 6))
+    plt.title("Growth Signal")
+    plt.xlabel("Date")
+    plt.ylabel("Growth Signal")
+    plt.xlim(left=12*19)
+    plt.savefig('growth_signal.png')
+    plt.show(block = False)
