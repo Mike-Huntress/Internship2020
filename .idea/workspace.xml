@@ -23,51 +23,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5ca5f69-bd6d-4f20-9e01-c33817bcb1b3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/CAN_SHIFTED_M2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CAN_Yields_Slope_M2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Can_M2_Corr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Can_M2_Corr_Shifted.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EqBondRiskAdjReturns.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EquityVBondRet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EquityVBondSystemRiskAdj.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Equity_Bond_RiskAdj_Ret.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PassiveComparisonEqWeighted.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PassiveComparisonRiskAdj.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PassiveVActiveBondReturns.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PassiveVActiveReturnsRiskAdj.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectDevelopment/Evaluation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectDevelopment/run.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sum_Indicators_Heavy_Premium.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/m_p_ind_corr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mr_corr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sum_indicators.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sum_prem_m2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/BWInternship2020.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BWInternship2020.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExplorationNotebooks/.ipynb_checkpoints/Indicator - Bond Premium and Curve Height-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExplorationNotebooks/.ipynb_checkpoints/Indicator - Monetary Base-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExplorationNotebooks/.ipynb_checkpoints/Indicator - Relative Stock Bond Performance-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExplorationNotebooks/.ipynb_checkpoints/Preliminary Signal Exploration-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExplorationNotebooks/Indicator - Bond Premium and Curve Height.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExplorationNotebooks/Indicator - Monetary Base.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExplorationNotebooks/Indicator - Relative Stock Bond Performance.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExplorationNotebooks/Preliminary Signal Exploration.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BasicSetup/Credentials.py" beforeDir="false" afterPath="$PROJECT_DIR$/BasicSetup/Credentials.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectDevelopment/BondPremium.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectDevelopment/BondPremium.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectDevelopment/Indicators.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectDevelopment/Indicators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectDevelopment/MonetaryBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectDevelopment/MonetaryBase.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectDevelopment/RelativeStockBond.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectDevelopment/RelativeStockBond.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectDevelopment/Signal.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectDevelopment/Signal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/Data Exploration Exercises-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/Data Exploration Exercises-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/Indicator - Bond Premium and Curve Height-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/Indicator - Bond Premium and Curve Height-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/Indicator - Monetary Base-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/Indicator - Monetary Base-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/Indicator - Relative Stock Bond Performance-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/Indicator - Relative Stock Bond Performance-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/Preliminary Signal Exploration-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/Preliminary Signal Exploration-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/Python_Demo-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/Python_Demo-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleSignal/Data Exploration Exercises.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/Data Exploration Exercises.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleSignal/DataBrowser.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/DataBrowser.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleSignal/Indicator - Bond Premium and Curve Height.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/Indicator - Bond Premium and Curve Height.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleSignal/Indicator - Monetary Base.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/Indicator - Monetary Base.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleSignal/Indicator - Relative Stock Bond Performance.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/Indicator - Relative Stock Bond Performance.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleSignal/Preliminary Signal Exploration.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/Preliminary Signal Exploration.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleSignal/Python_Demo.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/Python_Demo.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleSignal/ScratchPad.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SampleSignal/ScratchPad.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/Indicator - Bond Premium and Curve Height-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/Indicator - Monetary Base-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/Indicator - Relative Stock Bond Performance-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleSignal/.ipynb_checkpoints/Preliminary Signal Exploration-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleSignal/Indicator - Bond Premium and Curve Height.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleSignal/Indicator - Monetary Base.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleSignal/Indicator - Relative Stock Bond Performance.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleSignal/Preliminary Signal Exploration.ipynb" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,9 +203,9 @@
       <option name="ipnbPort" value="8889" />
     </configuration>
     <list>
-      <item itemvalue="Python.MonetaryBase" />
-      <item itemvalue="Python.MonetaryBase (1)" />
       <item itemvalue="Python.BondPremium" />
+      <item itemvalue="Python.MonetaryBase (1)" />
+      <item itemvalue="Python.MonetaryBase" />
       <item itemvalue="Python.Signal" />
       <item itemvalue="Python.run" />
     </list>
@@ -401,29 +373,29 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="507" y="223" key="FileChooserDialogImpl/0.23.1440.877@0.23.1440.877" timestamp="1596424625217" />
-    <state width="1419" height="405" key="GridCell.Tab.0.bottom" timestamp="1597332305568">
+    <state width="1419" height="263" key="GridCell.Tab.0.bottom" timestamp="1597358736793">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1419" height="259" key="GridCell.Tab.0.bottom/0.0.1440.900/-1920.-630.1920.1080@0.0.1440.900" timestamp="1597164874289" />
-    <state width="1419" height="405" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1597332305568" />
+    <state width="1419" height="263" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1597358736793" />
     <state width="1379" height="217" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1597114199713" />
-    <state width="1419" height="405" key="GridCell.Tab.0.center" timestamp="1597332305567">
+    <state width="1419" height="263" key="GridCell.Tab.0.center" timestamp="1597358736792">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1419" height="259" key="GridCell.Tab.0.center/0.0.1440.900/-1920.-630.1920.1080@0.0.1440.900" timestamp="1597164874287" />
-    <state width="1419" height="405" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1597332305567" />
+    <state width="1419" height="263" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1597358736792" />
     <state width="1379" height="217" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1597114199712" />
-    <state width="1419" height="405" key="GridCell.Tab.0.left" timestamp="1597332305566">
+    <state width="1419" height="263" key="GridCell.Tab.0.left" timestamp="1597358736791">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1419" height="259" key="GridCell.Tab.0.left/0.0.1440.900/-1920.-630.1920.1080@0.0.1440.900" timestamp="1597164874286" />
-    <state width="1419" height="405" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1597332305566" />
+    <state width="1419" height="263" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1597358736791" />
     <state width="1379" height="217" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1597114199712" />
-    <state width="1419" height="405" key="GridCell.Tab.0.right" timestamp="1597332305568">
+    <state width="1419" height="263" key="GridCell.Tab.0.right" timestamp="1597358736793">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1419" height="259" key="GridCell.Tab.0.right/0.0.1440.900/-1920.-630.1920.1080@0.0.1440.900" timestamp="1597164874288" />
-    <state width="1419" height="405" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1597332305568" />
+    <state width="1419" height="263" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1597358736793" />
     <state width="1379" height="217" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1597114199713" />
     <state x="229" y="79" key="SettingsEditor" timestamp="1597130129933">
       <screen x="0" y="0" width="1440" height="900" />
