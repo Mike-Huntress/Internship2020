@@ -41,7 +41,7 @@ def standardize(
 
     Args:
         a: The DataFrame or Series to standardize.
-        window: TODO:
+        window: The window of history over which to standardize.
 
     Returns:
         The DataFrame or Series with mean of 0 and standard deviation of 1.
@@ -136,15 +136,25 @@ def compute_corrcoef(
 
 
 def compute_annualized_return(
-    rets: Union[pd.Series, pd.DataFrame]
+    rets: Union[pd.Series, pd.DataFrame],
+    risk_free_rate: Optional[pd.Series] = None
 ) -> Union[float, pd.Series]:
     """
-    TODO: 
+    Computes the annualized return of the investment(s) over its lifetime.
+
+    Args:
+        rets: The return stream of the investment or investments.
+        risk_free_rate: The annual risk free rate of return quoted monthly. If
+            provided, will compute excess return.
+
+    Returns:
+        The annualized return of each investment.
+
     """
 
     assert rets.index.freq == 'B'
 
-    total_ret = compute_total_return(rets)
+    total_ret = compute_total_return(rets, risk_free_rate)
     n_years = (rets.index[-1] - rets.index[0]).n / WEEKDAYS_PER_YEAR
     return (1 + total_ret)**(1 / n_years) - 1
 
@@ -154,13 +164,13 @@ def compute_total_return(
     risk_free_rate: Optional[pd.Series] = None
 ) -> Union[float, pd.Series]:
     """
-    Computes the total cumulative return of the investment(s) over their 
+    Computes the total cumulative return of the investment(s) over its
     lifetime.
 
     Args:
         rets: The return stream of the investment or investments.
         risk_free_rate: The annual risk free rate of return quoted monthly. If
-            provided will compute total excess return.
+            provided, will compute total excess return.
 
     Returns:
         The total return of each investment.
@@ -201,6 +211,8 @@ def compute_sharpe_ratio(
     """
     Computes the Sharpe ratio of a return stream given the time series of risk 
     free rates.
+
+    TODO: Need to look into issues with annualizing the daily Sharpe.
 
     Args:
         rets: The daily return percentages of an investment.
@@ -264,7 +276,18 @@ def maximize_sharpe_ratio(
     risk_free_rate: pd.Series
 ) -> Tuple[np.array, float]:
     """
-    TODO: write docstring
+    Finds weights between assets that maximizes the Sharpe ratio of the 
+    combined portfolio.
+
+    TODO: Need to look into the problems with annualizing the daily Sharpe.
+
+    Args:
+        rets: The daily returns for each asset.
+        risk_free_rate: The annual risk free rate of return quoted monthly.
+
+    Returns:
+        weights: The weights for each asset.
+        sharpe: The resulting Sharpe ratio for the combined portfolio.
 
     """
 
@@ -274,26 +297,39 @@ def maximize_sharpe_ratio(
             risk_free_rate
         )
 
-    n_assets = len(rets)
+    n_assets = len(rets) if isinstance(rets, list) else rets.shape[1]
     args = (rets, risk_free_rate)
     constraints = ({'type': 'eq', 'fun': lambda x: np.sum(x) - 1})
     bounds = tuple((0, 1) for _ in range(n_assets))
     res = sco.minimize(neg_sharpe_ratio, [1 / n_assets] * n_assets, args=args,
                        method='SLSQP', bounds=bounds, constraints=constraints)
+
     return res.x, -res.fun
 
 
-def maximize_diversification(rets: pd.DataFrame) -> Tuple[np.array, float]:
+def maximize_diversification(
+    rets: Union[pd.DataFrame, List[pd.Series]]
+) -> Tuple[np.array, float]:
     """
-    TODO: write docstring
+    Finds weights between assets that maximizes the diversification ratio of 
+    the combined portfolio, that is the ratio of the weighted average of 
+    volatilities divided by the portfolio volatility.
+
+    The constraints for the weights are current set to +/- 60% of the uniform 
+    weight.
+
+    Args:
+        rets: The daily returns for each asset.
+
+    Returns:
+        weights: The weights for each asset.
+        div: The diversification statistic.
 
     """
 
-    def neg_vol_sharpe(weights, std, cov) -> float:
-        weights = np.array([weights])
-        return -(
-            weights.dot(std) / np.sqrt(weights.dot(cov).dot(weights.T))
-        )[0][0]
+    def neg_div(w, std, cov) -> float:
+        w = np.array([w])
+        return -(w.dot(std) / np.sqrt(w.dot(cov).dot(w.T)))[0][0]
 
     n_assets = len(rets) if isinstance(rets, list) else rets.shape[1]
     args = (rets.std(), rets.cov())
@@ -303,13 +339,8 @@ def maximize_diversification(rets: pd.DataFrame) -> Tuple[np.array, float]:
     uniform_weight = 1 / n_assets
     bounds = tuple((uniform_weight * 0.4, uniform_weight * 1.6)
                    for _ in range(n_assets))
-    res = sco.minimize(neg_vol_sharpe, [uniform_weight] * n_assets, args=args,
+    res = sco.minimize(neg_div, [uniform_weight] * n_assets, args=args,
                        method='SLSQP', bounds=bounds, constraints=constraints)
+
     return res.x, -res.fun
-
-
-
-
-
-
 
