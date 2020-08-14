@@ -1,6 +1,9 @@
 Bridgewater Internship 2020 (UNDER CONSTRUCTION)
 ================================================
 
+The two most relevant files to look at are [indicators.py](indicators.py) and [stats.py](stats/stats.py).
+
+
 Notice about Sharpe Ratios
 --------------------------
 
