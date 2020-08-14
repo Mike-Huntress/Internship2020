@@ -12,12 +12,8 @@ class RelativeStockBond(BaseIndicator):
         self.bond_ret = self.BondReturnIdx.pct_change(self.WEEKDAYS_IN_YEAR)
 
     def update_indicator(self, date):
-        # positions scaled from -1 to 1
         outperformance = self.get_smoothed_outperformance()
         positions = -1 * self.normalize_outperformance(outperformance)
-        #weights = self.get_slope_weights(outperformance)
-        #positions = positions.multiply(weights)
-        #positions = self.scale_position_range(positions)
         positions = self.scale_signal_weights(positions)
         self.end_train_date = date
         return positions
@@ -45,8 +41,3 @@ class RelativeStockBond(BaseIndicator):
         global_mean = outperformance.loc[self.end_train_date].mean()
         global_std = outperformance.loc[self.end_train_date].std()
         return (outperformance.loc[self.end_train_date] - global_mean) / global_std
-
-    def get_slope_weights(self, outperformance):
-        #for scaling positions up/down based on the rate of change in equity outperformance
-        diffs = outperformance.diff().abs().loc[self.end_train_date]
-        return diffs / diffs.sum()

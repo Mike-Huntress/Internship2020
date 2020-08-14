@@ -13,21 +13,16 @@ class MonetaryBase(BaseIndicator):
         self.prior_weights = pd.Series()
 
     def update_indicator(self, date):
-        #positions scaled from -1 to 1
         slope_change_m2 = self.get_m2_second_diff()
         curr_slopes_standardized = self.standardize_m2_time(slope_change_m2, norm_period=5)
         if self.prior_weights.empty:
             self.prior_weights = curr_slopes_standardized
         # hold prior position if the slope is < .5 standard deviations from 0
         curr_slopes_standardized = curr_slopes_standardized.where(curr_slopes_standardized.abs() > 0.5, self.prior_weights)
-        # long_weight = self.get_long_weight(curr_slopes_standardized)
-        # short_weight = self.get_short_weight(curr_slopes_standardized)
-        # positions = long_weight - short_weight
         positions = curr_slopes_standardized * -1
         total_weight = positions.abs().sum()
         if total_weight != 0:
             positions = positions / total_weight
-        # positions = self.scale_position_range(positions)
         self.end_train_date = date
         self.prior_weights = curr_slopes_standardized
         return positions
@@ -44,17 +39,3 @@ class MonetaryBase(BaseIndicator):
         rolling_slope_std = rolling_slope.std()
         time_standardized_slopes = (slope_change_m2)/ rolling_slope_std
         return time_standardized_slopes.loc[self.end_train_date]
-
-    def get_long_weight(self, curr_slopes_standardized):
-        neg_slopes = curr_slopes_standardized.multiply(curr_slopes_standardized.lt(0))
-        sum_neg_slopes = neg_slopes.sum()
-        if sum_neg_slopes != 0:
-            neg_slopes = neg_slopes / sum_neg_slopes
-        return neg_slopes
-
-    def get_short_weight(self, curr_slopes_standardized):
-        pos_slopes = curr_slopes_standardized.multiply(curr_slopes_standardized.gt(0))
-        sum_pos_slopes = pos_slopes.sum()
-        if sum_pos_slopes != 0:
-            pos_slopes = pos_slopes / sum_pos_slopes
-        return pos_slopes
