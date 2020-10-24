@@ -1,0 +1,13 @@
+id,datastream_code,name,datastream_currency
+USA,US,United States,USD
+JPN,JP,Japan,JAP
+GBR,UK,Great Britain,UKP
+CAN,CN,Canada,CAD
+AUS,AU,Australia,AUD
+SWE,SD,Sweden,SWF
+NOR,NW,Norway,NOR
+ESP,ES,Spain,ESP
+ITA,IT,Italy,ITL
+DEU,BD,Germany,WGM
+FRA,FR,France,FRF
+CHE,SW,Switzerland,CHF
